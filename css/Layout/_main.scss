@@ -1,0 +1,9 @@
+.l-main {
+    overflow: hidden;
+    opacity: 1;
+
+    @include breakpoint(pc) {
+        width: 80.7%;
+        float: left;
+    }
+}

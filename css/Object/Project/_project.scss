@@ -1,0 +1,315 @@
+/*以下sidebarのproject*/
+.p-sidebar__wrapper {
+    color: #707070;
+    background-color: #fff7ef;
+    width: 32.8rem;
+    position: absolute;
+    z-index: 200;
+    right: -35rem;
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+    top: 0;
+    @include breakpoint(pc) {
+        width: 19.3%;
+        float: right;
+        right: 0rem;
+        position: absolute;
+        display: block;
+    }
+}
+/*JSでsidebar開いた状態を作る*/
+.p-sidebar__wrapper.is-open {
+    overflow: scroll; /*JSでsidebar開いたときにsidebarだけスクロールさせる*/
+    height: 100vh; /*overflowを機能させるためにブラウザの高さいっぱいを指定*/
+    -webkit-overflow-scrolling: touch; /*慣性スクロールが効くのでスムーズとなる？*/
+    right: 0rem;
+    position: absolute;
+    /*JSでsidebar開いた状態をレスポンシブ対応*/
+    @include breakpoint(tablet) {
+        width: 50%;
+        @include breakpoint(pc) {
+            display: block;
+        }
+    }
+}
+
+
+/*以下headerのproject*/
+.p-search__form {
+    line-height: 4.6rem;
+    margin-top: 3.8rem;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    @include breakpoint(pc) {
+        float: right;
+        display: inline-block;
+        margin-top: 8.6rem;
+        margin-right: 3rem;
+    }
+}
+
+/*以下front-page mainのproject*/
+.p-page__hero {
+    background-image: url(/images/top_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+
+    @include breakpoint(tablet) {
+        background-image: url(/images/top_tablet_bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        @include breakpoint(pc) {
+            background-image: url(/images/top_pc_bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+}
+
+.p-main__container {
+    /*レスポンシブ　tablet PC*/
+    @include breakpoint(tablet) {
+        display: flex;
+    }
+    h2 {
+        color: #fff;
+        font-size: 4.1rem;
+        font-family: Roboto;
+        padding: 1.3rem 0 0 1.2rem;
+        position: relative;
+    }
+    h2::after {
+        content: "";
+        position: absolute;
+        left: 1.2rem;
+        bottom: -1.13rem; /*線の上下位置*/
+        width: 3.39rem; /*線の長さ*/
+        height: 0.5rem; /*線の太さ*/
+        background-color: #fff; /*線の色*/
+    }
+
+    h3 {
+        font-size: 2.2rem;
+        font-family: "M+ 1m";
+        padding: 1.9rem 0 2.1rem 1rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 3.69rem;
+        padding: 0 1.4rem 2rem 1rem;
+    }
+}
+
+.p-takeOut__container {
+    background-image: url(/images/takeout_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 2rem;
+    width: 89.5%;
+    height: 64.2rem;
+    /*レスポンシブ　tablet PC*/
+    @include breakpoint(tablet) {
+        margin-left: 4rem;
+        margin-right: 2rem;
+    }
+}
+
+.p-eatIn__container {
+    background-image: url(/images/eatin_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 2rem;
+    width: 89.5%;
+    height: 64.2rem;
+    /*レスポンシブ　tablet PC*/
+    @include breakpoint(tablet) {
+        margin-left: 2rem;
+        margin-right: 4rem;
+    }
+}
+
+.p-map__container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/map_bg.jpg); /*map画像にカラーフィルター黒*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 100%;
+    height: 69.1rem;
+    margin-top: 4.9rem;
+    background-color: #000000;
+    opacity: 0.6;
+    /*レスポンシブ　tablet*/
+    @include breakpoint(tablet) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/map_tablet_bg.jpg); /*map画像にカラーフィルター黒*/
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        /*レスポンシブ　PC*/
+        @include breakpoint(pc) {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/map_pc_bg.jpg); /*map画像にカラーフィルター黒*/
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+}
+
+/*以下archive mainのproject*/
+.p-archive__hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/archive_top_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.p-archive__main {
+    background-color: #fffdfa;
+    padding-top: 11.5rem;
+}
+
+.p-archive__container {
+    h3 {
+        font-size: 2.8rem;
+        margin: 3rem 0 3.2rem 2.2rem;
+    }
+    p {
+        font-size: 1.6rem;
+        line-height: 3.7rem;
+        margin-left: 2.2rem;
+        margin-right: 1.8rem;
+        height: 27.6rem;
+        width: 89.3%;
+        @include breakpoint(tablet) {
+            height: 14.3rem;
+        }
+    }
+}
+
+.p-card__contents {
+    background-color: #3c2b1c;
+    color: #fff;
+    height: 35.5rem;
+    box-sizing: border-box;
+    padding-left: 1.7rem;
+    text-align: initial;
+    @include breakpoint(tablet) {
+        float: right;
+        width: 50%;
+        @include breakpoint(pc) {
+            height: 47.1rem;
+        }
+    }
+}
+
+/*archiveのページフィード部分*/
+.p-pagenation {
+    display: flex;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    color: #707070;
+    padding-bottom: 3rem;
+    padding-top: 6.1rem;
+    @include breakpoint(tablet) {
+        width: 70rem;
+        padding-top: 10.5rem;
+        @include breakpoint(pc) {
+            padding-top: 15rem;
+            padding-bottom: 6.4rem;
+        }
+    }
+}
+
+/*以下single mainのproject*/
+.p-single__hero {
+    background-image: url(/images/single_top_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 22.5rem;
+    position: relative;
+    @include breakpoint(tablet) {
+        height: 50rem;
+    }
+}
+
+.p-single-page__mainbg {
+    background-color: #fffdfa;
+}
+
+.p-single-page__main {
+    background-color: #fffdfa;
+    padding-top: 3rem;
+    width: 89.3%;
+    @include breakpoint(tablet) {
+        width: 85.6%;
+        @include breakpoint(pc) {
+            width: 87.1%;
+        }
+    }
+}
+
+.p-single-page__topics {
+    h2 {
+        margin-bottom: 3.2rem;
+        font-size: 3.6rem;
+    }
+    p {
+        height: 18.3rem;
+        font-size: 1.6rem;
+        margin-bottom: 3.4rem;
+    }
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 6rem;
+        font-size: 2rem;
+    }
+}
+
+.p-single-page__article {
+    font-size: 1.6rem;
+    color: #3c2a10;
+}
+
+/*以下page mainのproject*/
+.p-page-hero {
+    background-image: url(/images/page_hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 22.5rem;
+    position: relative;
+    @include breakpoint(tablet) {
+        height: 50rem;
+    }
+}
+
+/*以下footerのproject*/
+.p-shop__info {
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 3.9rem;
+}
+
+.p-copyright {
+    margin: 0 auto;
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 3.5rem;
+}

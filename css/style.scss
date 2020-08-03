@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "M+ 1m";
+  src: local("M+ 1m");
+}
+@font-face {
+  font-family: "Rounded M+ 1m regular";
+  src: local("Rounded M+ 1m regular");
+}
+@font-face {
+  font-family: "Rounded M+ 2m regular";
+  src: local("Rounded M+ 2m regular");
+}
+/*@import "setting/**";
+@import "function/**";*/
+@import "foundation/_reset.scss";
+@import "foundation/_base.scss";
+@import "layout/_header.scss";
+@import "layout/_main.scss";
+@import "layout/_footer.scss";
+@import "layout/_sidebar.scss";
+@import "object/Project/_project.scss";
+@import "object/Component/_component.scss";
+@import "object/Utility/_utility.scss";
+
+/*全画面右余白削除,sidebar高さをfooterまで埋める調整用*/
+.u-body__wrrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+
+/*jQueryサイドバー表示の黒透過*/
+.u-open__menu__wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}

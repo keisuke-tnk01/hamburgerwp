@@ -1,0 +1,13 @@
+.l-header {
+    overflow: hidden;
+    height: 217px;
+    background-color: #fff7ef;
+    color: #707070;
+    opacity: 1.0;
+    font-family: "Roboto";
+    vertical-align: bottom;
+    @include breakpoint ( pc ) {
+        width: 80.8%;
+        float: left;
+    }
+}

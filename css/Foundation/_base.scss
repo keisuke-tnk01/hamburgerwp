@@ -1,0 +1,44 @@
+:root {
+    font-size: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    max-width: 100%;
+    margin: auto;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 320px;
+    margin: auto;
+}
+.is-open {
+    position: fixed;/*JSでsidebar開いたときに背景を固定させる*/
+}
+
+// mixin
+@mixin breakpoint($point) {
+    @if $point == tablet {
+        @media (min-width: 641px) {
+            @content;
+        }
+    }
+    @if $point == pc {
+        @media (min-width: 769px) {
+            @content;
+        }
+    }
+    /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
