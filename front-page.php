@@ -1,14 +1,11 @@
+
 <?php get_header(); ?> <!--header.phpを読み込むテンプレートタグ（インクルードタグ）-->
     <?php get_sidebar(); ?> <!--siderbar.phpを読み込むテンプレートタグ（インクルードタグ）-->
 
-
-
-
         <div class="u-open__menu__wrapper"></div>
 
-        
-
         <main class="l-main">
+        <img src="<?php bloginfo('template_directory'); ?>/images/top_bg.jpg" alt="sample">
             <div class="p-page__hero">
                 <h2 class="c-main__title">ダミーサイト</h2>
             </div>
@@ -47,4 +44,4 @@
             </section>
         </main>
         
-<?php get_footer(); ?> <!--footer.phpを読み込むテンプレートタグ（インクルードタグ）-->
+    <?php get_footer(); ?> <!--footer.phpを読み込むテンプレートタグ（インクルードタグ）-->

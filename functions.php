@@ -1,7 +1,8 @@
 <?php 
     add_theme_support( 'menus' ); //WP管理画面の外観に”メニュー”が追加される
     add_theme_support( 'title-tag' ); //タイトルを出力
-    
+    add_theme_support( 'post-thumbnails' );//アイキャッチ画像を扱えるようにする
+
     function hamburger_title( $title ) {
         //投稿・固定ページにかかわらず、サイトのフロントページが表示されているかを判定。そしてメインブログページが表示されているかを判定
         if ( is_front_page() && is_home() ) {

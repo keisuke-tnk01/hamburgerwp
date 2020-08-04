@@ -24,10 +24,10 @@
     <div class="u-body__wrrapper">
         <!--全画面右余白削除,sidebar高さをfooterまで埋める調整用-->
         <header class="l-header">
-            <?php wp_nav_menu(); ?>
-            <!--<div id="js-open__menu" class="c-header__menu">
+            
+            <div id="js-open__menu" class="c-header__menu">
                 <p>Menu</p>
-            </div>-->
+            </div>
             <h1 class="c-site__title">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
             </h1>
