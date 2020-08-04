@@ -46,5 +46,5 @@
                 </div>
             </section>
         </main>
-
+        
 <?php get_footer(); ?> <!--footer.phpを読み込むテンプレートタグ（インクルードタグ）-->
