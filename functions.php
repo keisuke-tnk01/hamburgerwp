@@ -1,0 +1,1 @@
+<?php add_theme_support( 'menus' ); //WP管理画面の外観に”メニュー”が追加される
