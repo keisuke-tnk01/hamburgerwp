@@ -28,12 +28,6 @@
             <h1 class="c-site__title">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
             </h1>
-            <form role="search" method="get" id="searchform" class="p-search__form">
-                <div>
-                    <input type="text" class="c-search__text" placeholder="&#xf002;">
-                        <label>
-                            <input type="submit" class="c-search__submit" value="検索">
-                        </label>
-                </div>
-            </form>
+            <?php get_search_form(); ?>
         </header>
+        
