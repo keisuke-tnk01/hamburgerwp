@@ -5,29 +5,35 @@
                 <div class="c-menu__list">
                     <div class="c-burger__menu">
                         <h3>バーガー</h3>
-                        <p>ハンバーガー</p>
-                        <p>チーズバーガー</p>
-                        <p>テリヤキバーガー</p>
-                        <p>アボカドバーガー</p>
-                        <p>フィッシュバーガー</p>
-                        <p>ベーコンバーガー</p>
-                        <p>チキンバーガー</p>
+                        <ul>
+                            <li><a href="/">ハンバーガー</a></li>
+                            <li><a href="/">チーズバーガー</a></li>
+                            <li><a href="/">テリヤキバーガー</a></li>
+                            <li><a href="/">アボカドバーガー</a></li>
+                            <li><a href="/">フィッシュバーガー</a></li>
+                            <li><a href="/">ベーコンバーガー</a></li>
+                            <li><a href="/">チキンバーガー</a></li>
+                        </ul>
                     </div>
                     <div class="c-side__menu">
                         <h3>サイド</h3>
-                        <p>ポテト</p>
-                        <p>サラダ</p>
-                        <p>ナゲット</p>
-                        <p>コーン</p>
+                        <ul>
+                            <li><a href="/">ポテト</a></li>
+                            <li><a href="/">サラダ</a></li>
+                            <li><a href="/">ナゲット</a></li>
+                            <li><a href="/">コーン</a></li>
+                        </ul>
                     </div>
                     <div class="c-drink__menu">
                         <h3>ドリンク</h3>
-                        <p>コーラ</p>
-                        <p>ファンタ</p>
-                        <p>オレンジ</p>
-                        <p>アップル</p>
-                        <p>紅茶（Ice/Hot）</p>
-                        <p>コーヒー（Ice/Hot）</p>
+                        <ul>
+                            <li><a href="/">コーラ</a></li>
+                            <li><a href="/">ファンタ</a></li>
+                            <li><a href="/">オレンジ</a></li>
+                            <li><a href="/">アップル</a></li>
+                            <li><a href="/">紅茶（Ice/Hot）</a></li>
+                            <li><a href="/">コーヒー（Ice/Hot）</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
