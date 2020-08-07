@@ -409,7 +409,7 @@ body {
   color: #fff;
   max-width: 100%;
   height: 150px;
-  background-image: url(../../images/footer_bg.png);
+  background-image: url(./../images/footer_bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -517,7 +517,7 @@ body {
 
 /*以下front-page mainのproject*/
 .p-page__hero {
-  background-image: url(../../../images/top_bg.jpg);
+  background-image: url(./../images/top_bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -534,7 +534,7 @@ body {
 
 @media (min-width: 641px) {
   .p-page__hero {
-    background-image: url(../../../images/top_tablet_bg.jpg);
+    background-image: url(./../images/top_tablet_bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -548,7 +548,7 @@ body {
 
 @media (min-width: 641px) and (min-width: 769px) {
   .p-page__hero {
-    background-image: url(../../../images/top_pc_bg.jpg);
+    background-image: url(./../images/top_pc_bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -607,7 +607,7 @@ body {
 }
 
 .p-takeOut__container {
-  background-image: url(../../../images/takeout_bg.jpg);
+  background-image: url(./../images/takeout_bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -630,7 +630,7 @@ body {
 }
 
 .p-eatIn__container {
-  background-image: url(../../../images/eatin_bg.jpg);
+  background-image: url(./../images/eatin_bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -653,8 +653,8 @@ body {
 }
 
 .p-map__container {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../../images/map_bg.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/map_bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(./../images/map_bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../images/map_bg.jpg);
   /*map画像にカラーフィルター黒*/
   background-repeat: no-repeat;
   background-position: center center;
@@ -674,8 +674,8 @@ body {
 
 @media (min-width: 641px) {
   .p-map__container {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../../images/map_tablet_bg.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/map_tablet_bg.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(./../images/map_tablet_bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../images/map_tablet_bg.jpg);
     /*map画像にカラーフィルター黒*/
     background-repeat: no-repeat;
     background-position: center center;
@@ -691,8 +691,8 @@ body {
 
 @media (min-width: 641px) and (min-width: 769px) {
   .p-map__container {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../../images/map_pc_bg.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/map_pc_bg.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(./../images/map_pc_bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../images/map_pc_bg.jpg);
     /*map画像にカラーフィルター黒*/
     background-repeat: no-repeat;
     background-position: center center;
@@ -702,8 +702,8 @@ body {
 
 /*以下archive mainのproject*/
 .p-archive__hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../../images/archive_top_bg.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/archive_top_bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(./../images/archive_top_bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../images/archive_top_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -812,7 +812,7 @@ body {
 
 /*以下single mainのproject*/
 .p-single__hero {
-  background-image: url(../../../images/single_top_bg.jpg);
+  background-image: url(./../images/single_top_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -889,7 +889,7 @@ body {
 
 /*以下page mainのproject*/
 .p-page-hero {
-  background-image: url(../../../images/page_hero_bg.jpg);
+  background-image: url(./../images/page_hero_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -1305,7 +1305,7 @@ body {
 .c-card__imgframe {
   height: 23rem;
   width: 100%;
-  background-image: url(../../../images/archive_card_img.jpg);
+  background-image: url(./../images/archive_card_img.jpg);
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -1322,7 +1322,7 @@ body {
 
 @media (min-width: 641px) {
   .c-card__imgframe {
-    background-image: url(../../../images/archive_card_tablet_img.jpg);
+    background-image: url(./../images/archive_card_tablet_img.jpg);
     float: left;
     width: 50%;
     height: 35.5rem;
@@ -1336,7 +1336,7 @@ body {
 
 @media (min-width: 641px) and (min-width: 769px) {
   .c-card__imgframe {
-    background-image: url(../../../images/archive_card_pc_img.jpg);
+    background-image: url(./../images/archive_card_pc_img.jpg);
     height: 47.1rem;
   }
 }
@@ -1510,7 +1510,7 @@ body {
 }
 
 .c-single-page__wide__imgframe {
-  background-image: url(../../../images/single_img_wide.jpg);
+  background-image: url(./../images/single_img_wide.jpg);
   height: 12.4rem;
   width: 100%;
   margin-bottom: 3rem;
@@ -1578,7 +1578,7 @@ body {
   width: 42.7%;
   height: 8.9rem;
   margin-top: 0rem;
-  background-image: url(../../../images/single_img.jpg);
+  background-image: url(./../images/single_img.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -1609,7 +1609,7 @@ body {
 }
 
 .c-single-page__middle__imgframe {
-  background-image: url(../../../images/single_img.jpg);
+  background-image: url(./../images/single_img.jpg);
   height: 16.6rem;
   width: 79.7%;
   margin-bottom: 3rem;
@@ -1683,7 +1683,7 @@ body {
 }
 
 .c-single-page__grid .c-single-page__big__imgframe {
-  background-image: url(../../../images/single_img.jpg);
+  background-image: url(./../images/single_img.jpg);
   height: 20.5rem;
   width: 100%;
   background-repeat: no-repeat;

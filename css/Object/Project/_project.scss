@@ -51,7 +51,7 @@
 
 /*以下front-page mainのproject*/
 .p-page__hero {
-    background-image: url(../../../images/top_bg.jpg);
+    background-image: url(./../images/top_bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -61,13 +61,13 @@
     display: block;
 
     @include breakpoint(tablet) {
-        background-image: url(../../../images/top_tablet_bg.jpg);
+        background-image: url(./../images/top_tablet_bg.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
 
         @include breakpoint(pc) {
-            background-image: url(../../../images/top_pc_bg.jpg);
+            background-image: url(./../images/top_pc_bg.jpg);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
@@ -111,7 +111,7 @@
 }
 
 .p-takeOut__container {
-    background-image: url(../../../images/takeout_bg.jpg);
+    background-image: url(./../images/takeout_bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -126,7 +126,7 @@
 }
 
 .p-eatIn__container {
-    background-image: url(../../../images/eatin_bg.jpg);
+    background-image: url(./../images/eatin_bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -141,7 +141,7 @@
 }
 
 .p-map__container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/map_bg.jpg); /*map画像にカラーフィルター黒*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../images/map_bg.jpg); /*map画像にカラーフィルター黒*/
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -152,13 +152,13 @@
     opacity: 0.6;
     /*レスポンシブ　tablet*/
     @include breakpoint(tablet) {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/map_tablet_bg.jpg); /*map画像にカラーフィルター黒*/
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../images/map_tablet_bg.jpg); /*map画像にカラーフィルター黒*/
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         /*レスポンシブ　PC*/
         @include breakpoint(pc) {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/map_pc_bg.jpg); /*map画像にカラーフィルター黒*/
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../images/map_pc_bg.jpg); /*map画像にカラーフィルター黒*/
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
@@ -168,7 +168,7 @@
 
 /*以下archive mainのproject*/
 .p-archive__hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/archive_top_bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../images/archive_top_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
@@ -235,7 +235,7 @@
 
 /*以下single mainのproject*/
 .p-single__hero {
-    background-image: url(../../../images/single_top_bg.jpg);
+    background-image: url(./../images/single_top_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
@@ -288,7 +288,7 @@
 
 /*以下page mainのproject*/
 .p-page-hero {
-    background-image: url(../../../images/page_hero_bg.jpg);
+    background-image: url(./../images/page_hero_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;

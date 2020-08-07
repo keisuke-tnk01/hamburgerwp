@@ -260,19 +260,19 @@
 .c-card__imgframe {
     height: 23rem;
     width: 100%;
-    background-image: url(../../../images/archive_card_img.jpg);
+    background-image: url(./../images/archive_card_img.jpg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
     box-sizing: border-box;
     display: block; /*図の下の空白を消す*/
     @include breakpoint(tablet) {
-        background-image: url(../../../images/archive_card_tablet_img.jpg);
+        background-image: url(./../images/archive_card_tablet_img.jpg);
         float: left;
         width: 50%;
         height: 35.5rem;
         @include breakpoint(pc) {
-            background-image: url(../../../images/archive_card_pc_img.jpg);
+            background-image: url(./../images/archive_card_pc_img.jpg);
             height: 47.1rem;
         }
     }
@@ -385,7 +385,7 @@
 }
 
 .c-single-page__wide__imgframe {
-    background-image: url(../../../images/single_img_wide.jpg);
+    background-image: url(./../images/single_img_wide.jpg);
     height: 12.4rem;
     width: 100%;
     margin-bottom: 3rem;
@@ -423,7 +423,7 @@
     width: 42.7%;
     height: 8.9rem;
     margin-top: 0rem;
-    background-image: url(../../../images/single_img.jpg);
+    background-image: url(./../images/single_img.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -437,7 +437,7 @@
 }
 
 .c-single-page__middle__imgframe {
-    background-image: url(../../../images/single_img.jpg);
+    background-image: url(./../images/single_img.jpg);
     height: 16.6rem;
     width: 79.7%;
     margin-bottom: 3rem;
@@ -469,7 +469,7 @@
         }
     }
     .c-single-page__big__imgframe {
-        background-image: url(../../../images/single_img.jpg);
+        background-image: url(./../images/single_img.jpg);
         height: 20.5rem;
         width: 100%;
         background-repeat: no-repeat;

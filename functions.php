@@ -21,7 +21,7 @@
         wp_enqueue_style('M+PLUS+1p', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap', array() );
         wp_enqueue_style('M+PLUS+Rounded+1c', '//fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap', array() );
         wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0');
-        wp_enqueue_style('style', get_template_directory_uri(). '/css/style.css', array(), '1.0.0'); //ver.は作成者の中で管理
+        wp_enqueue_style('style', get_template_directory_uri(). './css/style.css', array(), '1.0.0'); //ver.は作成者の中で管理
         wp_enqueue_style('style', get_template_directory_uri(). '/style.css', array(), '1.0.0'); //ver.は作成者の中で管理
         //wp_enqueue_script('3.5.1.min', get_settings('site_url'). '/wp-content/themes/hamburger/js/'jquery-3.5.1.min.js, array('jquery'), true);
     }
