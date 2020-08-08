@@ -5,7 +5,7 @@
         <div class="u-open__menu__wrapper"></div>
 
         <main class="l-main">
-        <!--<img src="<?php bloginfo('template_directory'); ?>/images/top_bg.jpg" alt="sample">-->
+       
             <div class="p-page__hero">
                 <h2 class="c-main__title">ダミーサイト</h2>
             </div>
