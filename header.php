@@ -6,7 +6,14 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <link rel="stylesheet" href="css/style.css">
     
-    
+    <!--WP上部の管理バー表示時のサイトデザインへの重なりをキャンセル-->
+    <?php if( is_user_logged_in() ) : ?>
+        <style type="text/css">
+            .l-header {
+            margin-top: 32px;
+            }
+        </style>
+    <?php endif; ?>
     
     <?php wp_head(); ?>
 
