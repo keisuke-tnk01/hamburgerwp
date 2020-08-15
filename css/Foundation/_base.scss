@@ -42,3 +42,11 @@ body {
         }
     }*/
 }
+
+//max-width 600px以下での上部WP管理バー位置ずれ修正用だが機能していない
+@media screen and (max-width: 600px) {
+    #wpadminbar {
+        position: fixed!important;
+    }
+}
+    
