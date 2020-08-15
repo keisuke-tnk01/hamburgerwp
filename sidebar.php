@@ -4,7 +4,7 @@
                 <img src="images/menu_cancel_btn.png" class="c-menu__cancel__btn" id="js-close__menu">
                 <h2 class="c-sidebar__title">Menu</h2>
                 <div class="c-menu__list">
-                    <div class="c-burger__menu">
+                    <!--<div class="c-burger__menu">
                         <h3>バーガー</h3>
                         <ul>
                             <li><a href="/">ハンバーガー</a></li>
@@ -35,7 +35,8 @@
                             <li><a href="/">紅茶（Ice/Hot）</a></li>
                             <li><a href="/">コーヒー（Ice/Hot）</a></li>
                         </ul>
-                    </div>
+                    </div>-->
+                    <?php wp_nav_menu(); ?> <!--サイドバーのメニューをgmenuから読み込み-->
                 </div>
             </div>
         </sidebar>
