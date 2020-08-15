@@ -18,7 +18,13 @@
                 </div>
 
                 <section class="p-card__wrapper">
-                    <div class="c-card__container">
+                    <?php get_template_part('include/card'); ?>
+                    <?php get_template_part('include/card'); ?>
+                    <?php get_template_part('include/card'); ?>
+                    <?php get_template_part('include/card'); ?>
+                    <?php get_template_part('include/card'); ?>
+                    
+                    <!--<div class="c-card__container">
                         <img class="c-card__imgframe">
                         <div class="p-card__contents">
                             <h2 class="c-card__title">見出しが入ります</h2>
@@ -82,7 +88,7 @@
                                 <input type="submit" class="c-card__search__submit" value="詳しく見る">
                             </label>
                         </div>
-                    </div>
+                    </div>-->
                 </section>
 
                 <section class="p-pagenation">

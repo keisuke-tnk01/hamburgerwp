@@ -44,8 +44,8 @@ body {
 }
 
   //max-width 600px以下での上部WP管理バー位置ずれ修正用だが機能せず、wp-includeの中のadmin-bar.min.cssで以下のようにposition：absoluteからfixedに書き換え
-  //@media screen and (max-width: 600px) {//
-    //#wpadminbar {//
-        //position: fixed!important;//
-    //}//
-  //}//
+  @media screen and (max-width: 600px) {
+    #wpadminbar {
+        position: fixed!important;
+    }
+  }

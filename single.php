@@ -4,11 +4,22 @@
 
         <div class="u-open__menu__wrapper"></div>
 
+
+
         <main class="l-main">
 
-            <div class="p-single__hero">
-                <h1 class="c-single__main__title">h1 チーズバーガー:</h1>
-            </div>
+            <!--<div class="p-single__hero">-->
+            <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+            <?php the_post_thumbnail(); ?>
+                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <h1 class="c-single__main__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                </div>
+                <?php endwhile; else : ?><p>表示する商品がありません</p>
+                <?php endif; ?>
+                <!--<h1 class="c-single__main__title"></h1>-->
+            <!--</div>-->
+            
+    
             <div class="p-single-page__mainbg">
                 <div class="p-single-page__main">
                     <div class="p-single-page__topics">
@@ -131,30 +142,5 @@
             </div>
         </main>
 
-        <?php
-                if( have_posts() ) :
-                    while( have_posts() ) :
-                        the_post(); ?>
-                            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                                <h2 class="post__ttl"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                                <ul class="post__meta">
-                                    <li class="post__meta__item">
-                                        <date class="post__meta__date"><?php echo get_the_date(); ?></date>
-                                    </li>
-                                    <li class="post__meta__item">
-                                        <i class="fa fa-folder" aria-hidden="true"><?php the_category( ', ' ); ?></i>
-                                    </li>
-                                    <li class="post__meta__item">
-                                        <i class="fa fa-tag" aria-hidden="true"><?php the_tags( '' ); ?></i>
-                                    </li>
-                                </ul>
-                                <?php the_post_thumbnail(); ?>
-                                <?php the_content( '続きを読む' ); ?>
-                            </div>
-                    <?php endwhile;
-                else :
-                    ?><p>表示する記事がありません</p><?php
-                endif;
-            ?>
     
     <?php get_footer(); ?> <!--footer.phpを読み込むテンプレートタグ（インクルードタグ）-->

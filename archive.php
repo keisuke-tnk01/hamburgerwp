@@ -8,7 +8,7 @@
 
             <div class="p-archive__hero">
                 <h2 class="c-archive__main__title">Menu:</h2>
-                <h3 class="c-archive__main__menu">チーズバーガー</h3>
+                <h3 class="c-archive__main__menu"><?php single_cat_title(); ?></h3>
             </div>
             <div class="p-archive__main">
                 <div class="p-archive__container">
@@ -18,10 +18,13 @@
                 </div>
 
                 <section class="p-card__wrapper">
-                    <div class="c-card__container">
+                    <?php get_template_part('include/card'); ?>
+                    <?php get_template_part('include/card'); ?>
+                    <?php get_template_part('include/card'); ?>
+                    <!--<div class="c-card__container">
                         <img class="c-card__imgframe">
                         <div class="p-card__contents">
-                            <h2 class="c-card__title">チーズバーガー</h2>
+                            <h2 class="c-card__title"><?php single_cat_title(); ?></h2>
                             <div class="c-card__txt">
                                 <h3>小見出しが入ります</h3>
                                 <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -34,7 +37,7 @@
                     <div class="c-card__container">
                         <img class="c-card__imgframe">
                         <div class="p-card__contents">
-                            <h2 class="c-card__title">ダブルチーズバーガー</h2>
+                            <h2 class="c-card__title"><?php single_cat_title(); ?></h2>
                             <div class="c-card__txt">
                                 <h3>小見出しが入ります</h3>
                                 <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -47,7 +50,7 @@
                     <div class="c-card__container">
                         <img class="c-card__imgframe">
                         <div class="p-card__contents">
-                            <h2 class="c-card__title">スペシャルチーズバーガー</h2>
+                            <h2 class="c-card__title"><?php single_cat_title(); ?></h2>
                             <div class="c-card__txt">
                                 <h3>小見出しが入ります</h3>
                                 <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -56,7 +59,7 @@
                                 <input type="submit" class="c-card__search__submit" value="詳しく見る">
                             </label>
                         </div>
-                    </div>
+                    </div>-->
                 </section>
 
                 <section class="p-pagenation">
