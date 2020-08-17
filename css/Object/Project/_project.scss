@@ -235,16 +235,18 @@
 
 /*以下single mainのproject*/
 .p-single__hero {
-    /*background-image: url(./../images/single_top_bg.jpg);*/
+    /*background-image: url(./../images/single_top_bg.jpg);アイキャッチ画像読み込みのため削除*/
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 100%;
+    width: 100%;
     height: 22.5rem;
     position: relative;
+    object-fit:cover;
     @include breakpoint(tablet) {
         height: 50rem;
     }
 }
+
 
 .p-single-page__mainbg {
     background-color: #fffdfa;

@@ -28,6 +28,8 @@
         wp_enqueue_script('scriptjs', get_template_directory_uri(). '/script.js', array('jquery'), '1.0.0', true);
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script');
+    
+    
 
     //WP上部管理バーを非表示
     //add_filter( 'show_admin_bar', '__return_false' );

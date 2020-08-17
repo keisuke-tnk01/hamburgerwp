@@ -4,20 +4,22 @@
 
         <div class="u-open__menu__wrapper"></div>
 
-
-
         <main class="l-main">
 
-            <!--<div class="p-single__hero">-->
-            <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-            <?php the_post_thumbnail(); ?>
-                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <h1 class="c-single__main__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                </div>
-                <?php endwhile; else : ?><p>表示する商品がありません</p>
-                <?php endif; ?>
-                <!--<h1 class="c-single__main__title"></h1>-->
-            <!--</div>-->
+        
+
+        <?php if(have_posts()):
+                while(have_posts()): the_post(); ?>
+                        <h1 class="c-single__main__title">
+                            <?php the_title(); ?>
+                        </h1>
+                        <?php the_post_thumbnail('array()', array('class' => "p-single__hero")); ?>
+                        
+                <?php endwhile;
+            else :
+                ?><p>表示する商品がありません</p><?php
+            endif;
+            ?>
             
     
             <div class="p-single-page__mainbg">

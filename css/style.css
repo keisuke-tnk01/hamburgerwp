@@ -365,19 +365,20 @@ body {
   /*JSでsidebar開いたときに背景を固定させる*/
 }
 
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    position: fixed !important;
+  }
+}
+
 .l-header {
   overflow: hidden;
-  height: 217px;
+  /*height: 217px;*/
   background-color: #fff7ef;
   color: #707070;
   opacity: 1.0;
   font-family: "Roboto";
   vertical-align: bottom;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 769px) {
@@ -390,11 +391,6 @@ body {
 .l-main {
   overflow: hidden;
   opacity: 1;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 769px) {
@@ -414,11 +410,6 @@ body {
   background-position: center center;
   background-size: cover;
   opacity: 1;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 769px) {
@@ -441,11 +432,6 @@ body {
   padding-bottom: 5000px;
   margin-bottom: -5000px;
   top: 0;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 769px) {
@@ -469,21 +455,11 @@ body {
   right: 0rem;
   position: absolute;
   /*JSでsidebar開いた状態をレスポンシブ対応*/
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
   .p-sidebar__wrapper.is-open {
     width: 50%;
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -499,11 +475,6 @@ body {
   margin-top: 3.8rem;
   text-align: center;
   margin-bottom: 4rem;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 769px) {
@@ -525,11 +496,6 @@ body {
   height: auto;
   position: relative;
   display: block;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -538,11 +504,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -557,11 +518,6 @@ body {
 
 .p-main__container {
   /*レスポンシブ　tablet PC*/
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -615,11 +571,6 @@ body {
   width: 89.5%;
   height: 64.2rem;
   /*レスポンシブ　tablet PC*/
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -638,11 +589,6 @@ body {
   width: 89.5%;
   height: 64.2rem;
   /*レスポンシブ　tablet PC*/
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -665,11 +611,6 @@ body {
   background-color: #000000;
   opacity: 0.6;
   /*レスポンシブ　tablet*/
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -681,11 +622,6 @@ body {
     background-position: center center;
     background-size: cover;
     /*レスポンシブ　PC*/
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -728,11 +664,6 @@ body {
   margin-right: 1.8rem;
   height: 27.6rem;
   width: 89.3%;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -749,22 +680,12 @@ body {
           box-sizing: border-box;
   padding-left: 1.7rem;
   text-align: initial;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
   .p-card__contents {
     float: right;
     width: 50%;
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -784,22 +705,12 @@ body {
   color: #707070;
   padding-bottom: 3rem;
   padding-top: 6.1rem;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
   .p-pagenation {
     width: 70rem;
     padding-top: 10.5rem;
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -812,17 +723,14 @@ body {
 
 /*以下single mainのproject*/
 .p-single__hero {
-  background-image: url(./../images/single_top_bg.jpg);
+  /*background-image: url(./../images/single_top_bg.jpg);アイキャッチ画像読み込みのため削除*/
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
+  width: 100%;
   height: 22.5rem;
   position: relative;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 641px) {
@@ -839,21 +747,11 @@ body {
   background-color: #fffdfa;
   padding-top: 3rem;
   width: 89.3%;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
   .p-single-page__main {
     width: 85.6%;
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -895,11 +793,6 @@ body {
   max-width: 100%;
   height: 22.5rem;
   position: relative;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -926,11 +819,6 @@ body {
 /*以下sidebarのcomponent*/
 .c-sidebar__title {
   display: none;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 769px) {
@@ -957,11 +845,6 @@ body {
   width: 3.2rem;
   height: 3.2rem;
   cursor: pointer;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 769px) {
@@ -994,11 +877,6 @@ body {
   margin-bottom: 4.2rem;
   position: relative;
   left: 4.6rem;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 769px) {
@@ -1017,11 +895,6 @@ body {
   line-height: 4.7rem;
   position: relative;
   left: 6.6rem;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 769px) {
@@ -1063,11 +936,6 @@ body {
   margin: 1.4rem 1.6rem 0 0;
   z-index: 500;
   cursor: pointer;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 769px) {
@@ -1080,11 +948,6 @@ body {
   font-size: 4rem;
   text-align: center;
   padding-top: 4rem;
-  @if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }
 }
 
 @media (min-width: 769px) {
@@ -1111,16 +974,6 @@ body {
   background-color: #fff;
   height: 4.6rem;
   width: 61.3%;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -1148,11 +1001,6 @@ body {
   background-color: #f2ede9;
   vertical-align: top;
   display: inline-block;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -1190,11 +1038,6 @@ body {
   width: 100%;
   height: 50%;
   /*レスポンシブ　tablet*/
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -1202,11 +1045,6 @@ body {
     width: 100%;
     height: 100%;
     /*レスポンシブ　PC*/
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -1270,11 +1108,6 @@ body {
   margin-bottom: 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -1282,11 +1115,6 @@ body {
     height: 35.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -1309,11 +1137,6 @@ body {
           box-sizing: border-box;
   display: block;
   /*図の下の空白を消す*/
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -1322,11 +1145,6 @@ body {
     float: left;
     width: 50%;
     height: 35.5rem;
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -1356,21 +1174,11 @@ body {
   height: 11.4rem;
   line-height: 3.7rem;
   text-align: left;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
   .c-card__txt p {
     padding-right: 5.9rem;
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -1397,11 +1205,6 @@ body {
 
 .c-page__view {
   display: none;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -1411,39 +1214,15 @@ body {
   }
 }
 
-.c-page__logo__left,
-.c-page__logo__right {
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
-}
-
 @media (min-width: 641px) {
-  .c-page__logo__left,
-  .c-page__logo__right {
+  .c-page__logo {
     margin-right: 0rem;
     margin-left: 0rem;
   }
 }
 
-.c-page__logo
-left {
-  background-image: url(./../images/archive_page_previous.png);
-}
-
-.c-page__logo__right {
-  background-image: url(./../images/archive_page_next.png);
-}
-
 .c-page__word {
   margin: 0.82rem;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -1454,11 +1233,6 @@ left {
 
 .c-page__container {
   display: none;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -1486,11 +1260,8 @@ left {
   font-size: 3.6rem;
   font-family: "M+ 1m";
   padding: 9.1rem 0 9.1rem 2.6rem;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
+  position: absolute;
+  z-index: 1;
 }
 
 @media (min-width: 641px) {
@@ -1528,21 +1299,11 @@ left {
           box-sizing: border-box;
   display: block;
   /*図の下の空白を消す*/
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
   .c-single-page__wide__imgframe {
     height: 26.4rem;
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -1591,21 +1352,11 @@ left {
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
   .c-single-page__card__img {
     height: 18.9rem;
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -1627,22 +1378,12 @@ left {
           box-sizing: border-box;
   display: block;
   /*図の下の空白を消す*/
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
   .c-single-page__middle__imgframe {
     width: 81.3%;
     height: 35.8rem;
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -1659,11 +1400,6 @@ left {
   gap: 3rem;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -1673,11 +1409,6 @@ left {
     gap: 1.6rem;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -1700,21 +1431,11 @@ left {
           box-sizing: border-box;
   display: block;
   /*図の下の空白を消す*/
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
   .c-single-page__grid .c-single-page__big__imgframe {
     height: 20.5rem;
-    /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
   }
 }
 
@@ -1726,11 +1447,6 @@ left {
 
 .c-single-page__list1 {
   margin: 3rem 0 6rem 2rem;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {
@@ -1793,11 +1509,6 @@ left {
   width: 33.5rem;
   height: 8.1rem;
   margin-bottom: 3rem;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
 }
 
 @media (min-width: 641px) {

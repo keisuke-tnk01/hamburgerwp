@@ -322,21 +322,13 @@
     }
 }
 
-.c-page__logo__left,
-.c-page__logo__right {
+.c-page__logo {
     @include breakpoint(tablet) {
         margin-right: 0rem;
         margin-left: 0rem;
     }
 }
 
-.c-page__logo
-&left {
-    background-image: url(./../images/archive_page_previous.png);
-}
-&right {
-    background-image: url(./../images/archive_page_next.png);
-}
 
 .c-page__word {
     margin: 0.82rem;
@@ -365,10 +357,12 @@
 
 /*以下single mainのcomponent*/
 .c-single__main__title {
-    color: #fff;
+    color:#fff;
     font-size: 3.6rem;
     font-family: "M+ 1m";
     padding: 9.1rem 0 9.1rem 2.6rem;
+    position: absolute;
+    z-index: 1;
     @include breakpoint(tablet) {
         padding-top: 20.8rem;
     }

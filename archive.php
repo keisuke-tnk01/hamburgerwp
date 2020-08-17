@@ -65,7 +65,7 @@
                 <section class="p-pagenation">
                     <p class="c-page__view">page 1/10</p>
                     <div class="c-page__previous">
-                        <img class="c-page__logo__left">
+                        <img src="/images/archive_page_previous.png" class="c-page__logo">
                         <button type="button" class="c-page__word">前へ</button>
                     </div>
                     <div class="c-page__container">
@@ -117,7 +117,7 @@
                     </div>
                     <div class="l-page_next">
                         <button type="button" class="c-page__word">次へ</button>
-                        <img class="c-page__logo__right">
+                        <img src="/images/archive_page_next.png" class="c-page__logo">
                     </div>
                 </section>
             </div>
