@@ -329,12 +329,24 @@
 }
 
 
-.c-page__word {
-    margin: 0.82rem;
+p.c-page__word__pre,
+p.c-page__word__nex{
+    position: absolute;
+    float: left;
+    bottom: 19rem;
     @include breakpoint(tablet) {
         display: none;
     }
 }
+
+p.c-page__word__pre {
+    left: 30%;
+    
+}
+p.c-page__word__nex {
+    right: 30%;
+}
+
 
 .c-page__container {
     display: none;
