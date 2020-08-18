@@ -17,10 +17,10 @@
     add_filter( 'pre_get_document_title', 'hamburger_title' );
 
     function hamburger_script() {
-        wp_enqueue_style('Roboto', '//fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap', array() );
+        wp_enqueue_style('Roboto', '//fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap', array() );//以下3種のフォントの読み込み
         wp_enqueue_style('M+PLUS+1p', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap', array() );
         wp_enqueue_style('M+PLUS+Rounded+1c', '//fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap', array() );
-        wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0');
+        wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0');//fontawesomeの読み込み
         wp_enqueue_style('style', get_template_directory_uri(). './css/style.css', array(), '1.0.0'); //ver.は作成者の中で管理
         wp_enqueue_style('style', get_template_directory_uri(). 'style.css', array(), '1.0.0'); //ver.は作成者の中で管理
         wp_deregister_script('jquery');//WP本体のjqueryを登録解除
@@ -29,7 +29,23 @@
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script');
     
-    
+
+    //WP管理画面にウィジェットを導入しsidebarの編集を可能にする
+    function wpbeg_widgets_init() {
+        register_sidebar (
+            array(
+                'name'          => 'カテゴリーウィジェット',
+                'id'            => 'category_widget',
+                'description'   => 'カテゴリー用ウィジェットです',
+                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'after_widget'  => '</div>',
+                'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
+                'after_title'   => "</h2>\n",
+            )
+        );
+    }
+    add_action( 'widgets_init', 'wpbeg_widgets_init' );
+
 
     //WP上部管理バーを非表示
     //add_filter( 'show_admin_bar', '__return_false' );
