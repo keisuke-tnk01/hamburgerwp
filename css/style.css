@@ -1090,14 +1090,15 @@ body {
   color: #fff;
   font-size: 3.6rem;
   font-family: "M+ 1m";
-  padding: 11.9rem 0 0 3.7rem;
+  padding: 11.9rem 0 11.5rem 3.7rem;
 }
 
 .c-archive__main__menu {
   color: #fff;
   font-size: 1.6rem;
   font-family: "M+ 1m";
-  padding: 0 0 11.5rem 3.7rem;
+  padding-left: 2rem;
+  vertical-align: middle;
 }
 
 .c-card__container {
@@ -1129,7 +1130,6 @@ body {
 .c-card__imgframe {
   height: 23rem;
   width: 100%;
-  background-image: url(./../images/archive_card_img.jpg);
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -1137,11 +1137,12 @@ body {
           box-sizing: border-box;
   display: block;
   /*図の下の空白を消す*/
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 641px) {
   .c-card__imgframe {
-    background-image: url(./../images/archive_card_tablet_img.jpg);
     float: left;
     width: 50%;
     height: 35.5rem;
@@ -1150,7 +1151,6 @@ body {
 
 @media (min-width: 641px) and (min-width: 769px) {
   .c-card__imgframe {
-    background-image: url(./../images/archive_card_pc_img.jpg);
     height: 47.1rem;
   }
 }
