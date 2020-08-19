@@ -79,14 +79,14 @@
     @include breakpoint(tablet) {
         display: flex;
     }
-    h2 {
+    a {
         color: #fff;
         font-size: 4.1rem;
         font-family: Roboto;
         padding: 1.3rem 0 0 1.2rem;
         position: relative;
     }
-    h2::after {
+    a::after {
         content: "";
         position: absolute;
         left: 1.2rem;
