@@ -76,15 +76,24 @@
 }
 
 .p-main__container {
-    @include breakpoint(tablet) {
-        display: flex;
-    }
     a {
-        color: #fff;
         font-size: 4.1rem;
         font-family: Roboto;
         padding: 1.3rem 0 0 1.2rem;
         position: relative;
+        text-decoration: none;
+    }
+    &:link {
+        color:#fff;
+    }
+    &:visited {
+        color:#fff;
+    }
+    &:hover {
+        color:blue;
+    }
+    &:active {
+        color:blue;
     }
     a::after {
         content: "";
@@ -106,6 +115,9 @@
         font-size: 1.6rem;
         line-height: 3.69rem;
         padding: 0 1.4rem 2rem 1rem;
+    }
+    @include breakpoint(tablet) {
+        display: flex;
     }
 }
 
@@ -301,11 +313,29 @@
 }
 
 /*以下footerのproject*/
-.p-shop__info {
-    margin: 0 auto;
+.p-footer_container {
     font-size: 2rem;
-    text-align: center;
     padding-top: 3.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    
+    a {
+        text-decoration: none;
+        &:link {
+            color:#fff;
+        }
+        &:visited {
+            color:#fff;
+        }
+        &:hover {
+            color:blue;
+        }
+        &:active {
+            color:blue;
+        }
+    }
 }
 
 .p-copyright {

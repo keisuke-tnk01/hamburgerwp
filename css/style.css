@@ -348,7 +348,6 @@ img {
 
 * {
   max-width: 100%;
-  margin: auto;
 }
 
 html,
@@ -516,23 +515,31 @@ body {
   }
 }
 
-@media (min-width: 641px) {
-  .p-main__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.p-main__container h2 {
-  color: #fff;
+.p-main__container a {
   font-size: 4.1rem;
   font-family: Roboto;
   padding: 1.3rem 0 0 1.2rem;
   position: relative;
+  text-decoration: none;
 }
 
-.p-main__container h2::after {
+.p-main__container:link {
+  color: #fff;
+}
+
+.p-main__container:visited {
+  color: #fff;
+}
+
+.p-main__container:hover {
+  color: blue;
+}
+
+.p-main__container:active {
+  color: blue;
+}
+
+.p-main__container a::after {
   content: "";
   position: absolute;
   left: 1.2rem;
@@ -556,6 +563,14 @@ body {
   font-size: 1.6rem;
   line-height: 3.69rem;
   padding: 0 1.4rem 2rem 1rem;
+}
+
+@media (min-width: 641px) {
+  .p-main__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .p-takeOut__container {
@@ -798,11 +813,39 @@ body {
 }
 
 /*以下footerのproject*/
-.p-shop__info {
-  margin: 0 auto;
+.p-footer_container {
   font-size: 2rem;
-  text-align: center;
   padding-top: 3.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.p-footer_container a {
+  text-decoration: none;
+}
+
+.p-footer_container a:link {
+  color: #fff;
+}
+
+.p-footer_container a:visited {
+  color: #fff;
+}
+
+.p-footer_container a:hover {
+  color: blue;
+}
+
+.p-footer_container a:active {
+  color: blue;
 }
 
 .p-copyright {
@@ -954,6 +997,26 @@ body {
   }
 }
 
+.c-site__title a {
+  text-decoration: none;
+}
+
+.c-site__title a:link {
+  color: #707070;
+}
+
+.c-site__title a:visited {
+  color: #707070;
+}
+
+.c-site__title a:hover {
+  color: blue;
+}
+
+.c-site__title a:active {
+  color: blue;
+}
+
 .c-search__text {
   -webkit-appearance: none;
   display: inline-block;
@@ -1015,6 +1078,10 @@ body {
 
 .c-content1 {
   margin: 22rem auto 1rem auto;
+}
+
+.c-content2 {
+  margin: 0 auto 1rem auto;
 }
 
 .c-content1,

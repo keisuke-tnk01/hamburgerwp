@@ -11,8 +11,7 @@
             </div>
             <div class="p-main__container">
                 <div class="p-takeOut__container">
-                    <!--<h2>Take Out</h2>-->
-                    <a href="/category/eatin/">Take Out</a>
+                    <a class="c-content__title" href="/category/takeOut/">Take Out</a>
                     <div class="c-content1">
                         <h3>小見出しが入ります</h3>
                         <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -23,8 +22,7 @@
                     </div>
                 </div>
                 <div class="p-eatIn__container">
-                    <!--<h2>Eat In</h2>-->
-                    <a href="/category/eatin/">Eat In</a>
+                    <a class="c-content__title" href="/category/eatin/">Eat In</a>
                     <div class="c-content1">
                         <h3>小見出しが入ります</h3>
                         <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>

@@ -1,5 +1,9 @@
             <footer class="l-footer">
-                <h2 class="p-shop__info">ショップ情報|ヒストリー</h2>
+                <div class="p-footer_container">
+                    <a class="felx-item item1" href="/shopinfo/">ショップ情報</a>
+                    <p class="felx-item item2">|</p>
+                    <a class="felx-item item3" href="/history/">ヒストリー</a>
+                </div>
                 <p class="p-copyright">Copyright : RaiseTech</p>
             </footer>
 

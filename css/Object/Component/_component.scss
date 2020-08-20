@@ -108,10 +108,26 @@
     font-size: 4rem;
     text-align: center;
     padding-top: 4rem;
+    
     @include breakpoint(pc) {
         margin-top: 5rem;
         margin-left: 6.5rem;
         display: inline-block;
+    }
+    a {
+        text-decoration: none;
+    &:link {
+        color:#707070;
+    }
+    &:visited {
+        color:#707070;
+    }
+    &:hover {
+        color:blue;
+    }
+    &:active {
+        color:blue;
+    }
     }
 }
 
@@ -164,8 +180,13 @@
     padding: 11.9rem 0px 11.8rem 2.5rem;
 }
 
+
 .c-content1 {
     margin: 22rem auto 1rem auto;
+}
+
+.c-content2 {
+    margin: 0 auto 1rem auto;
 }
 
 .c-content1,
