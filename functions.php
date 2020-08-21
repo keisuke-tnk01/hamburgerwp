@@ -30,6 +30,12 @@
     add_action( 'wp_enqueue_scripts', 'hamburger_script');
     
 
+    //editor-style.cssを読み込み
+    function hamburger_theme_add_editor_styles() {
+        add_editor_style( get_template_directory_uri() . "/css/editor-style.css" );
+    }
+    add_action( 'admin_init', 'hamburger_theme_add_editor_styles' );
+
 
     
 

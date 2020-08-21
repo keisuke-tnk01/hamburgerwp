@@ -348,6 +348,7 @@ img {
 
 * {
   max-width: 100%;
+  margin: auto;
 }
 
 html,
@@ -516,9 +517,10 @@ body {
 }
 
 .p-main__container a {
-  font-size: 4.1rem;
-  font-family: Roboto;
-  padding: 1.3rem 0 0 1.2rem;
+  font-size: 4.4rem;
+  font-family: "Roboto";
+  padding-left: 1.2rem;
+  top: 1.3rem;
   position: relative;
   text-decoration: none;
 }
@@ -813,7 +815,7 @@ body {
 }
 
 /*以下footerのproject*/
-.p-footer_container {
+.p-footer__container {
   font-size: 2rem;
   padding-top: 3.9rem;
   display: -webkit-box;
@@ -828,23 +830,23 @@ body {
   margin: 0;
 }
 
-.p-footer_container a {
+.p-footer__container a {
   text-decoration: none;
 }
 
-.p-footer_container a:link {
+.p-footer__container a:link {
   color: #fff;
 }
 
-.p-footer_container a:visited {
+.p-footer__container a:visited {
   color: #fff;
 }
 
-.p-footer_container a:hover {
+.p-footer__container a:hover {
   color: blue;
 }
 
-.p-footer_container a:active {
+.p-footer__container a:active {
   color: blue;
 }
 
@@ -1594,6 +1596,10 @@ p.c-page__word__nex {
 
 .c-under__btn__txt {
   padding-bottom: 7.1rem;
+}
+
+.c-flex-item {
+  margin: 0;
 }
 
 /*全画面右余白削除,sidebar高さをfooterまで埋める調整用*/

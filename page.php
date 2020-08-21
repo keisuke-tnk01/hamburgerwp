@@ -5,9 +5,17 @@
         <div class="u-open__menu__wrapper"></div>
         
         <main class="l-main">
-            <div class="p-page-hero">
-                <h1 class="c-single__main__title">ショップについて:</h1>
-            </div>
+            <?php if(have_posts()):
+                    while(have_posts()): the_post(); ?>
+                        <div class="p-page-hero">
+                            <h1 class="c-single__main__title"><?php the_title(); ?>:</h1>
+                        </div>
+                    <?php endwhile;
+                else :
+                    ?><p>表示する商品がありません</p><?php
+                endif;
+            ?>
+
             <div class="p-single-page__mainbg">
                 <div class="p-single-page__main">
                     <div class="p-single-page__topics">
