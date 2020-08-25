@@ -421,6 +421,10 @@ body {
   }
 }
 
+.l-sidebar {
+  z-index: 100;
+}
+
 /*以下sidebarのproject*/
 .p-sidebar__wrapper {
   color: #707070;
@@ -857,6 +861,7 @@ body {
   margin: 0 auto;
   font-size: 1.4rem;
   text-align: center;
+  padding-top: 3.5rem;
 }
 
 /*以下sidebarのcomponent*/

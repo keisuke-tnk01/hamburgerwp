@@ -1,8 +1,8 @@
             <footer class="l-footer">
                 <div class="p-footer__container">
-                    <a class="p-flex-item" href="/shopinfo/">ショップ情報</a>
-                    <p>|</p>
-                    <a class="p-flex-item" href="/history/">ヒストリー</a>
+                    <a class="p-flex-item item1" href="/shopinfo/">ショップ情報</a>
+                    <p class="p-flex-item item2">|</p>
+                    <a class="p-flex-item item3" href="/history/">ヒストリー</a>
                 </div>
                 <p class="p-copyright">Copyright : RaiseTech</p>
             </footer>

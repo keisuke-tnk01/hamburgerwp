@@ -22,17 +22,7 @@
                             ?><p>表示する商品がありません</p><?php
                         endif;
                         ?>
-                        <!--<?php if(have_posts()):
-                            while(have_posts()): the_post(); ?>
-                                <section class="c-single-page__big__imgframe">
-                                    <?php get_template_part('include/grid'); ?>
-                                    
-                                </section>
-                            <?php endwhile;
-                        else :
-                            ?><p>表示する商品がありません</p><?php
-                        endif;
-                        ?>-->
+                       
                     </div>
                 </div>
             </div>
