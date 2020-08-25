@@ -6,23 +6,38 @@
 
         <main class="l-main">
 
-        
-
-        <?php if(have_posts()):
-                while(have_posts()): the_post(); ?>
-                        <h1 class="c-single__main__title">
-                            <?php the_title(); ?>
-                        </h1>
-                        <?php the_post_thumbnail('array()', array('class' => "p-single__hero")); ?>
-                        
-                <?php endwhile;
-            else :
-                ?><p>表示する商品がありません</p><?php
-            endif;
-            ?>
-            
+            <h1 class="c-single__main__title">
+                <?php the_title(); ?>
+            </h1>
+            <?php the_post_thumbnail('array()', array('class' => "p-single__hero")); ?>
     
             <div class="p-single-page__mainbg">
+                <div class="p-single-page__main">
+                    <div class="p-single-page__topics">
+                        <?php if(have_posts()):
+                            while(have_posts()): the_post();
+                                the_content();
+                            endwhile;
+                        else :
+                            ?><p>表示する商品がありません</p><?php
+                        endif;
+                        ?>
+                        <!--<?php if(have_posts()):
+                            while(have_posts()): the_post(); ?>
+                                <section class="c-single-page__big__imgframe">
+                                    <?php get_template_part('include/grid'); ?>
+                                    
+                                </section>
+                            <?php endwhile;
+                        else :
+                            ?><p>表示する商品がありません</p><?php
+                        endif;
+                        ?>-->
+                    </div>
+                </div>
+            </div>
+    
+            <!--<div class="p-single-page__mainbg">
                 <div class="p-single-page__main">
                     <div class="p-single-page__topics">
                         <h2>見出しh2</h2>
@@ -70,6 +85,9 @@
 
                         <img class="c-single-page__middle__imgframe">
 
+
+                        
+
                         <div class="c-single-page__grid">
                             <img class="c-single-page__big__imgframe">
                             <img class="c-single-page__big__imgframe">
@@ -81,6 +99,7 @@
                             <img class="c-single-page__big__imgframe">
                             <img class="c-single-page__big__imgframe">
                         </div>
+
                         <div class="c-single-page__list1">
                             <ol class="c-list__item">
                                 <li>リストリストリスト</li>
@@ -141,7 +160,7 @@
                         <p class="c-under__btn__txt">boldboldboldboldboldboldbold</p>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </main>
 
     

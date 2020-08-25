@@ -517,9 +517,9 @@ body {
 }
 
 .p-main__container a {
-  font-size: 4.4rem;
+  font-size: 4.1rem;
   font-family: "Roboto";
-  padding-left: 1.2rem;
+  left: 1.2rem;
   top: 1.3rem;
   position: relative;
   text-decoration: none;
@@ -817,7 +817,7 @@ body {
 /*以下footerのproject*/
 .p-footer__container {
   font-size: 2rem;
-  padding-top: 3.9rem;
+  margin-top: 3.9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -827,7 +827,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
 }
 
 .p-footer__container a {
@@ -850,11 +849,14 @@ body {
   color: blue;
 }
 
+.p-flex-item {
+  margin: 0;
+}
+
 .p-copyright {
   margin: 0 auto;
   font-size: 1.4rem;
   text-align: center;
-  padding-top: 3.5rem;
 }
 
 /*以下sidebarのcomponent*/
@@ -912,34 +914,36 @@ body {
   margin-bottom: 8.5rem;
 }
 
-.c-menu__list h3 {
+.c-menu__list li {
+  list-style: none;
+}
+
+.c-menu__list .menu {
+  text-decoration: none;
   font-family: "mplus-1m-bold";
   font-size: 2.4rem;
-  margin-bottom: 4.2rem;
   position: relative;
   left: 4.6rem;
 }
 
 @media (min-width: 769px) {
-  .c-menu__list h3 {
+  .c-menu__list .menu {
     font-size: 1.8vw;
   }
 }
 
-.c-menu__list ul {
+.c-menu__list .sub-menu {
   list-style: none;
-}
-
-.c-menu__list li {
   font-family: "M+ 1m";
   font-size: 2rem;
   line-height: 4.7rem;
   position: relative;
-  left: 6.6rem;
+  left: 5rem;
+  margin: 4rem 0 4rem 0;
 }
 
 @media (min-width: 769px) {
-  .c-menu__list li {
+  .c-menu__list .sub-menu {
     font-size: 1.2vw;
   }
 }
@@ -1596,10 +1600,6 @@ p.c-page__word__nex {
 
 .c-under__btn__txt {
   padding-bottom: 7.1rem;
-}
-
-.c-flex-item {
-  margin: 0;
 }
 
 /*全画面右余白削除,sidebar高さをfooterまで埋める調整用*/

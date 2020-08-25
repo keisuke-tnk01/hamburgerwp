@@ -45,10 +45,14 @@
         margin-bottom: 8.5rem;
     }
 
-    h3 {
+    li {
+        list-style: none;
+    }
+
+    .menu {
+        text-decoration: none;
         font-family: "mplus-1m-bold";
         font-size: 2.4rem;
-        margin-bottom: 4.2rem;
         position: relative;
         left: 4.6rem;
         @include breakpoint(pc) {
@@ -56,19 +60,19 @@
         }
     }
 
-    ul {
+    .sub-menu {
         list-style: none; 
-    }
-    li {
         font-family: "M+ 1m";
         font-size: 2rem;
         line-height: 4.7rem;
         position: relative;
-        left: 6.6rem;
+        left: 5rem;
+        margin: 4rem 0 4rem 0;
         @include breakpoint(pc) {
             font-size: 1.2vw;
         }
     }
+    
     a {
         text-decoration: none;
     &:link {
@@ -584,9 +588,4 @@ p.c-page__word__nex {
 
 .c-under__btn__txt {
     padding-bottom: 7.1rem;
-}
-
-//footerのcomponent
-.c-flex-item {
-    margin: 0;
 }
