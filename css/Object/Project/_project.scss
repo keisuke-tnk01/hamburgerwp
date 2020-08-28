@@ -76,36 +76,36 @@
 }
 
 .p-main__container {
-    a {
-        font-size: 4.1rem;
-        font-family: "Roboto";
-        left: 1.2rem;
-        top: 1.3rem;
-        position: relative;
-        text-decoration: none;
-        
-    }
-    &:link {
-        color:#fff;
-    }
-    &:visited {
-        color:#fff;
-    }
-    &:hover {
-        color:blue;
-    }
-    &:active {
-        color:blue;
-    }
-    a::after {
-        content: "";
-        position: absolute;
-        left: 1.2rem;
-        bottom: -1.13rem; /*線の上下位置*/
-        width: 3.39rem; /*線の長さ*/
-        height: 0.5rem; /*線の太さ*/
-        background-color: #fff; /*線の色*/
-    }
+    .p-main__content__title {
+            font-size: 4.1rem;
+            font-family: "Roboto";
+            left: 1.2rem;
+            top: 1.3rem;
+            position: relative;
+            text-decoration: none;
+        }
+        &:link {
+            color:#fff;
+        }
+        &:visited {
+            color:#fff;
+        }
+        &:hover {
+            color:blue;
+        }
+        &:active {
+            color:blue;
+        }
+        a::after {
+            content: "";
+            position: absolute;
+            left: 0.5rem;
+            bottom: -1.13rem; /*線の上下位置*/
+            width: 3.39rem; /*線の長さ*/
+            height: 0.5rem; /*線の太さ*/
+            background-color: #fff; /*線の色*/
+        }
+    
 
     h3 {
         font-size: 2.2rem;
