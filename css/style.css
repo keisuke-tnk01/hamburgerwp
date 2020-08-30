@@ -1397,6 +1397,10 @@ p.c-page__word__nex {
   }
 }
 
+.wp-block-media-text {
+  margin-top: 15rem;
+}
+
 .wp-block-media-text__media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1406,11 +1410,19 @@ p.c-page__word__nex {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 3rem;
-  width: 100%;
+}
+
+@media (min-width: 641px) {
+  .wp-block-media-text__media {
+    width: 100%;
+  }
 }
 
 .wp-block-media-text__media__content {
-  width: 54.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
   margin-top: 0;
 }
 
@@ -1466,33 +1478,43 @@ p.c-page__word__nex {
   }
 }
 
-.wp-gallery-grid {
-  display: -ms-grid;
-  display: grid;
-  gap: 3rem;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+.wp-block-gallery {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.wp-block-gallery .blocks-gallery-grid {
+  display: block;
 }
 
 @media (min-width: 641px) {
-  .wp-gallery-grid {
-    display: -ms-grid;
-    display: grid;
-    gap: 1.6rem;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  .wp-block-gallery .blocks-gallery-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    top: 15rem;
   }
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  .wp-gallery-grid {
-    gap: 2rem;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+  .wp-block-gallery .blocks-gallery-grid {
+    top: 10rem;
   }
 }
 
-.wp-gallery-grid .wp-block-image.size-large {
+.wp-block-gallery .blocks-gallery-item {
+  width: 100%;
+}
+
+@media (min-width: 641px) {
+  .wp-block-gallery .blocks-gallery-item {
+    width: 50%;
+  }
+}
+
+.wp-block-image.size-large {
   /*background-image: url(./../images/single_img.jpg);*/
   height: 20.5rem;
   width: 100%;
@@ -1506,13 +1528,13 @@ p.c-page__word__nex {
 }
 
 @media (min-width: 641px) {
-  .wp-gallery-grid .wp-block-image.size-large {
+  .wp-block-image.size-large {
     height: 20.5rem;
   }
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  .wp-gallery-grid .wp-block-image.size-large {
+  .wp-block-image.size-large {
     height: 25.7rem;
   }
 }

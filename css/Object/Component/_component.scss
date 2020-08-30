@@ -436,15 +436,22 @@ p.c-page__word__nex {
     }
 }
 
+.wp-block-media-text {
+    margin-top: 15rem;
+}
+
 .wp-block-media-text__media/*.c-single-page__card__container1*/ {
     display: flex;
     flex-direction: row;
     margin-bottom: 3rem;
-    width: 100%;
+    @include breakpoint(tablet) {
+        width: 100%;
+    }
 }
 
 .wp-block-media-text__media__content/*.c-single-page__card__txtをWPクラスに変更*/ {
-    width: 54.3%;
+    display: flex;
+    width: 50%;
     margin-top: 0;
 }
 
@@ -484,19 +491,33 @@ p.c-page__word__nex {
         }
     }
 }
-.wp-gallery-grid/*.c-single-page__gridからWPクラスに変更*/ {
-    display: grid;
-    gap: 3rem;
-    grid-template-columns: 1fr;
-    @include breakpoint(tablet) {
-        display: grid;
-        gap: 1.6rem;
-        grid-template-columns: 1fr;
-        @include breakpoint(pc) {
-            gap: 2rem;
-            grid-template-columns: 1fr 1fr 1fr;
+
+.wp-block-gallery {
+    position: relative;
+    margin-top: 1rem;
+    
+    .blocks-gallery-grid {
+        display: block;
+        @include breakpoint(tablet) {
+            display: flex;
+            flex-wrap:wrap;
+            top: 15rem;
+            @include breakpoint(pc) {
+            top: 10rem;
+            }
+        }
     }
+    .blocks-gallery-item {
+        width: 100%;
+        @include breakpoint(tablet) {
+            width: 50%;
+        }
+    }
+
 }
+
+
+
 .wp-block-image.size-large/*.c-single-page__big__imgframe*/ {
     /*background-image: url(./../images/single_img.jpg);*/
     height: 20.5rem;
@@ -513,7 +534,7 @@ p.c-page__word__nex {
         }
     }
 }
-}
+
 
 .c-single-page__list1 {
     margin: 3rem 0 6rem 2rem;
