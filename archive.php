@@ -32,9 +32,9 @@
                 <!--ページネーション-->
                 <section class="p-pagenation">
 
-                    <p class="c-page__word__pre">前へ</p>
+                    <!--<p class="c-page__word__pre">前へ</p>-->
                     <?php wp_pagenavi(); ?> <!--WP page naviによるページネーションのプラグイン-->
-                    <p class="c-page__word__nex">次へ</p>
+                    <!--<p class="c-page__word__nex">次へ</p>-->
 
                 </section>
             </div>

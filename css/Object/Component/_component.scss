@@ -354,11 +354,12 @@
 }
 
 
-p.c-page__word__pre,
-p.c-page__word__nex{
-    position: absolute;
+.wp-pagenavi a.previouspostslink,/*p.c-page__word__pre*/
+.wp-pagenavi a.nextpostslink/*p.c-page__word__nex*/{
+    font-size: 1.6rem;
+    /*position: absolute;
     float: left;
-    bottom: 19rem;
+    bottom: 19rem;*/
     @include breakpoint(tablet) {
         display: none;
     }
@@ -493,25 +494,29 @@ p.c-page__word__nex {
 }
 
 .wp-block-gallery {
-    position: relative;
+    /*position: relative;*/
     margin-top: 1rem;
-    
     .blocks-gallery-grid {
-        display: block;
+        /*display: block;*/
+        display: grid;
+        /*grid-auto-columns: 100%;*/
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         @include breakpoint(tablet) {
-            display: flex;
-            flex-wrap:wrap;
-            top: 15rem;
+            display: grid;
+            grid-gap: 3rem;
+            /*display: flex;*/
+            margin-top: 24rem;
+            /*grid-template-columns: 1fr 1fr;*/
             @include breakpoint(pc) {
-            top: 10rem;
+                display: flex;
+                grid-gap: 0rem;
+                top: 10rem;
             }
         }
     }
     .blocks-gallery-item {
         width: 100%;
-        @include breakpoint(tablet) {
-            width: 50%;
-        }
+        object-fit: cover;
     }
 
 }
@@ -538,6 +543,7 @@ p.c-page__word__nex {
 
 .c-single-page__list1 {
     margin: 3rem 0 6rem 2rem;
+    
     @include breakpoint(tablet) {
         margin-top: 6rem;
     }
