@@ -421,38 +421,43 @@ p.c-page__word__nex {
 }
 
 .wp-block-image/*.c-single-page__wide__imgframe*/ {
-    
+    position: relative;
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 0 auto 6rem auto;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
     box-sizing: border-box;
     display: block; /*図の下の空白を消す*/
     @include breakpoint(tablet) {
-        height: 26.4rem;
+        height: auto;
         @include breakpoint(pc) {
             height: 50rem;
         }
+    }
+    img {
+        object-fit: cover;
+        width: 100%;
+        margin-bottom: 15rem;
     }
 }
 
 .wp-block-media-text {
     margin-top: 15rem;
-}
-
-.wp-block-media-text__media/*.c-single-page__card__container1*/ {
-    display: flex;
-    flex-direction: row;
     margin-bottom: 3rem;
     @include breakpoint(tablet) {
         width: 100%;
     }
 }
 
+
+
 .wp-block-media-text__media__content/*.c-single-page__card__txtをWPクラスに変更*/ {
     display: flex;
-    width: 50%;
+    /*width: 50%;*/
+    width: 42.7%;
+    height: 8.9rem;
+    margin-top: 0rem;
     margin-top: 0;
 }
 
@@ -502,10 +507,10 @@ p.c-page__word__nex {
         /*grid-auto-columns: 100%;*/
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         @include breakpoint(tablet) {
-            display: grid;
             grid-gap: 3rem;
             /*display: flex;*/
             margin-top: 24rem;
+            width: 100%;
             /*grid-template-columns: 1fr 1fr;*/
             @include breakpoint(pc) {
                 display: flex;
@@ -517,8 +522,13 @@ p.c-page__word__nex {
     .blocks-gallery-item {
         width: 100%;
         object-fit: cover;
+        @include breakpoint(tablet) {
+            width: 100%;
+            @include breakpoint(pc) {
+                width: 25%;
+            }
+        }
     }
-
 }
 
 
