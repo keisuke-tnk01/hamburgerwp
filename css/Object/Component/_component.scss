@@ -405,203 +405,76 @@ p.c-page__word__nex {
     }
 }
 
+.wp-block-image {
+    text-align: center;
+}
+
 .wp-block-quote/*.c-single-page__blockquote*/ {
     background-color: #f5f5f5;
     height: 61.7rem;
     font-family: "M+ 1m";
     margin-bottom: 3rem;
-    p/*.c-single-page__blockquote__txt*/ {
-        width: 85.6%;
-        padding-top: 3rem;
-        cite/*.c-quote__txt1*/ {
-            height: 50.5rem;
-            margin-bottom: 3rem;
-        }
-    }
-}
-
-.wp-block-image/*.c-single-page__wide__imgframe*/ {
-    position: relative;
-    width: 100%;
-    margin-bottom: 0 auto 6rem auto;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    box-sizing: border-box;
-    display: block; /*図の下の空白を消す*/
-    @include breakpoint(tablet) {
-        height: auto;
-        @include breakpoint(pc) {
-            height: 50rem;
-        }
-    }
-    img {
-        object-fit: cover;
-        width: 100%;
-        margin-bottom: 15rem;
-    }
+    padding: 3rem 1.6rem 3.1rem 2rem;
 }
 
 .wp-block-media-text {
-    margin-top: 15rem;
     margin-bottom: 3rem;
-    @include breakpoint(tablet) {
-        width: 100%;
-    }
-}
-
-
-
-.wp-block-media-text__media__content/*.c-single-page__card__txtをWPクラスに変更*/ {
-    display: flex;
-    /*width: 50%;*/
-    width: 42.7%;
-    height: 8.9rem;
-    margin-top: 0rem;
-    margin-top: 0;
-}
-
-.c-single-page__card__img {
-    width: 42.7%;
-    height: 8.9rem;
-    margin-top: 0rem;
-    /*background-image: url(./../images/single_img.jpg);*/
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    box-sizing: border-box;
-    @include breakpoint(tablet) {
-        height: 18.9rem;
-        @include breakpoint(pc) {
-            height: 35.8rem;
-        }
-    }
-}
-
-.c-single-page__middle__imgframe {
-    /*background-image: url(./../images/single_img.jpg);*/
-    height: 16.6rem;
-    width: 79.7%;
-    margin-bottom: 3rem;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    box-sizing: border-box;
-    display: block; /*図の下の空白を消す*/
-    @include breakpoint(tablet) {
-        width: 81.3%;
-        height: 35.8rem;
-        @include breakpoint(pc) {
-            width: 58.1rem;
-            height: 35.8rem;
-        }
-    }
-}
-
-.wp-block-gallery {
-    /*position: relative;*/
-    margin-top: 1rem;
-    .blocks-gallery-grid {
-        /*display: block;*/
-        display: grid;
-        /*grid-auto-columns: 100%;*/
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    &__content {
+        font-size: 1.6rem;
+        vertical-align: baseline;
+        padding: 5rem, 0, 13rem, auto;
         @include breakpoint(tablet) {
-            grid-gap: 3rem;
-            /*display: flex;*/
-            margin-top: 24rem;
             width: 100%;
-            /*grid-template-columns: 1fr 1fr;*/
-            @include breakpoint(pc) {
-                display: flex;
-                grid-gap: 0rem;
-                top: 10rem;
-            }
         }
+    }
+    &__media {
+        vertical-align: middle;
+        @include breakpoint(tablet) {
+            width: 100%;
+        }
+    }
+}
+
+
+.blocks-gallery-grid {
+    width: 100%;
+    margin-top: 1rem;
+    display: grid;
+    /*grid-template-columns: repeat(1, auto);*/
+    column-gap: 1.5rem;
+    @include breakpoint(tablet) {
+        height: 110.7rem;
+        grid-template-columns: repeat(2, auto);
+    }
+    @include breakpoint(pc) {
+        grid-template-columns: repeat(3, auto);
+        height: 80.4rem;
     }
     .blocks-gallery-item {
         width: 100%;
         object-fit: cover;
-        @include breakpoint(tablet) {
-            width: 100%;
-            @include breakpoint(pc) {
-                width: 25%;
-            }
-        }
+        
+    }
+    img {
+        width: 100%;
     }
 }
 
 
-
-.wp-block-image.size-large/*.c-single-page__big__imgframe*/ {
-    /*background-image: url(./../images/single_img.jpg);*/
-    height: 20.5rem;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    box-sizing: border-box;
-    display: block; /*図の下の空白を消す*/
-    @include breakpoint(tablet) {
-        height: 20.5rem;
-        @include breakpoint(pc) {
-            height: 25.7rem;
-        }
-    }
-}
-
-
-.c-single-page__list1 {
+ol {
     margin: 3rem 0 6rem 2rem;
-    
-    @include breakpoint(tablet) {
-        margin-top: 6rem;
-    }
 }
 
-.c-single-page__list2 {
-    margin: 3rem 0 6rem auto;
-    .c-list__item {
-        list-style-type: none;
-    }
-}
-
-.c-list__item {
-    margin-bottom: 3rem;
-}
-
-.c-list_middle {
-    margin-left: 3.8rem;
-}
-
-.c-single-page__html__container {
-    background-color: #f5f5f5;
-    width: 100%;
-    height: 23.7rem;
-    padding-top: 5rem;
-    padding-left: 5rem;
-    margin-bottom: 3rem;
-}
-
-.c-single-page__table,
-.c-td1,
-.c-td2 {
+table,
+td {
     background-color: #ffffff;
     border: solid 0.1rem #707070;
     border-collapse: collapse;
+    padding-top: 3.5rem auto 3.5rem auto;
+    table-layout: auto;
     margin-bottom: 3rem;
-    padding-left: 3rem;
-    height: 7.7rem;
-    width: 100%;
 }
 
-.c-td1 {
-    width: 40%;
-}
-
-.c-td2 {
-    width: 60%;
-}
 
 .wp-block-button__link /*.c-single-page__btnからWPクラスに変更*/ {
     text-align: center;
@@ -616,8 +489,4 @@ p.c-page__word__nex {
     @include breakpoint(tablet) {
         width: 42.9rem;
     }
-}
-
-.c-under__btn__txt {
-    padding-bottom: 7.1rem;
 }

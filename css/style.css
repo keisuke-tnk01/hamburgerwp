@@ -778,25 +778,6 @@ body {
   }
 }
 
-.p-single-page__topics h2 {
-  margin-bottom: 3.2rem;
-  font-size: 3.6rem;
-}
-
-.p-single-page__topics p {
-  height: 18.3rem;
-  font-size: 1.6rem;
-  margin-bottom: 3.4rem;
-}
-
-.p-single-page__topics h3,
-.p-single-page__topics h4,
-.p-single-page__topics h5,
-.p-single-page__topics h6 {
-  margin-bottom: 6rem;
-  font-size: 2rem;
-}
-
 .p-single-page__article {
   font-size: 1.6rem;
   color: #3c2a10;
@@ -1357,259 +1338,92 @@ p.c-page__word__nex {
   }
 }
 
+.wp-block-image {
+  text-align: center;
+}
+
 .wp-block-quote {
   background-color: #f5f5f5;
   height: 61.7rem;
   font-family: "M+ 1m";
   margin-bottom: 3rem;
-}
-
-.wp-block-quote p {
-  width: 85.6%;
-  padding-top: 3rem;
-}
-
-.wp-block-quote p cite {
-  height: 50.5rem;
-  margin-bottom: 3rem;
-}
-
-.wp-block-image {
-  position: relative;
-  width: 100%;
-  margin-bottom: 0 auto 6rem auto;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: block;
-  /*図の下の空白を消す*/
-}
-
-@media (min-width: 641px) {
-  .wp-block-image {
-    height: auto;
-  }
-}
-
-@media (min-width: 641px) and (min-width: 769px) {
-  .wp-block-image {
-    height: 50rem;
-  }
-}
-
-.wp-block-image img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  margin-bottom: 15rem;
+  padding: 3rem 1.6rem 3.1rem 2rem;
 }
 
 .wp-block-media-text {
-  margin-top: 15rem;
   margin-bottom: 3rem;
 }
 
+.wp-block-media-text__content {
+  font-size: 1.6rem;
+  vertical-align: baseline;
+  padding: 5rem, 0, 13rem, auto;
+}
+
 @media (min-width: 641px) {
-  .wp-block-media-text {
+  .wp-block-media-text__content {
     width: 100%;
   }
 }
 
-.wp-block-media-text__media__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /*width: 50%;*/
-  width: 42.7%;
-  height: 8.9rem;
-  margin-top: 0rem;
-  margin-top: 0;
-}
-
-.c-single-page__card__img {
-  width: 42.7%;
-  height: 8.9rem;
-  margin-top: 0rem;
-  /*background-image: url(./../images/single_img.jpg);*/
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.wp-block-media-text__media {
+  vertical-align: middle;
 }
 
 @media (min-width: 641px) {
-  .c-single-page__card__img {
-    height: 18.9rem;
+  .wp-block-media-text__media {
+    width: 100%;
   }
 }
 
-@media (min-width: 641px) and (min-width: 769px) {
-  .c-single-page__card__img {
-    height: 35.8rem;
-  }
-}
-
-.c-single-page__middle__imgframe {
-  /*background-image: url(./../images/single_img.jpg);*/
-  height: 16.6rem;
-  width: 79.7%;
-  margin-bottom: 3rem;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: block;
-  /*図の下の空白を消す*/
-}
-
-@media (min-width: 641px) {
-  .c-single-page__middle__imgframe {
-    width: 81.3%;
-    height: 35.8rem;
-  }
-}
-
-@media (min-width: 641px) and (min-width: 769px) {
-  .c-single-page__middle__imgframe {
-    width: 58.1rem;
-    height: 35.8rem;
-  }
-}
-
-.wp-block-gallery {
-  /*position: relative;*/
+.blocks-gallery-grid {
+  width: 100%;
   margin-top: 1rem;
-}
-
-.wp-block-gallery .blocks-gallery-grid {
-  /*display: block;*/
   display: -ms-grid;
   display: grid;
-  /*grid-auto-columns: 100%;*/
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  /*grid-template-columns: repeat(1, auto);*/
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
 }
 
 @media (min-width: 641px) {
-  .wp-block-gallery .blocks-gallery-grid {
-    grid-gap: 3rem;
-    /*display: flex;*/
-    margin-top: 24rem;
-    width: 100%;
-    /*grid-template-columns: 1fr 1fr;*/
+  .blocks-gallery-grid {
+    height: 110.7rem;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
   }
 }
 
-@media (min-width: 641px) and (min-width: 769px) {
-  .wp-block-gallery .blocks-gallery-grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    grid-gap: 0rem;
-    top: 10rem;
+@media (min-width: 769px) {
+  .blocks-gallery-grid {
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    height: 80.4rem;
   }
 }
 
-.wp-block-gallery .blocks-gallery-item {
+.blocks-gallery-grid .blocks-gallery-item {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-@media (min-width: 641px) {
-  .wp-block-gallery .blocks-gallery-item {
-    width: 100%;
-  }
-}
-
-@media (min-width: 641px) and (min-width: 769px) {
-  .wp-block-gallery .blocks-gallery-item {
-    width: 25%;
-  }
-}
-
-.wp-block-image.size-large {
-  /*background-image: url(./../images/single_img.jpg);*/
-  height: 20.5rem;
+.blocks-gallery-grid img {
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: block;
-  /*図の下の空白を消す*/
 }
 
-@media (min-width: 641px) {
-  .wp-block-image.size-large {
-    height: 20.5rem;
-  }
-}
-
-@media (min-width: 641px) and (min-width: 769px) {
-  .wp-block-image.size-large {
-    height: 25.7rem;
-  }
-}
-
-.c-single-page__list1 {
+ol {
   margin: 3rem 0 6rem 2rem;
 }
 
-@media (min-width: 641px) {
-  .c-single-page__list1 {
-    margin-top: 6rem;
-  }
-}
-
-.c-single-page__list2 {
-  margin: 3rem 0 6rem auto;
-}
-
-.c-single-page__list2 .c-list__item {
-  list-style-type: none;
-}
-
-.c-list__item {
-  margin-bottom: 3rem;
-}
-
-.c-list_middle {
-  margin-left: 3.8rem;
-}
-
-.c-single-page__html__container {
-  background-color: #f5f5f5;
-  width: 100%;
-  height: 23.7rem;
-  padding-top: 5rem;
-  padding-left: 5rem;
-  margin-bottom: 3rem;
-}
-
-.c-single-page__table,
-.c-td1,
-.c-td2 {
+table,
+td {
   background-color: #ffffff;
   border: solid 0.1rem #707070;
   border-collapse: collapse;
+  padding-top: 3.5rem auto 3.5rem auto;
+  table-layout: auto;
   margin-bottom: 3rem;
-  padding-left: 3rem;
-  height: 7.7rem;
-  width: 100%;
-}
-
-.c-td1 {
-  width: 40%;
-}
-
-.c-td2 {
-  width: 60%;
 }
 
 .wp-block-button__link {
@@ -1628,10 +1442,6 @@ p.c-page__word__nex {
   .wp-block-button__link {
     width: 42.9rem;
   }
-}
-
-.c-under__btn__txt {
-  padding-bottom: 7.1rem;
 }
 
 /*全画面右余白削除,sidebar高さをfooterまで埋める調整用*/
