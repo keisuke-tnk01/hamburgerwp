@@ -1376,42 +1376,28 @@ p.c-page__word__nex {
   }
 }
 
-.blocks-gallery-grid {
-  width: 100%;
-  margin-top: 1rem;
-  display: -ms-grid;
-  display: grid;
-  /*grid-template-columns: repeat(1, auto);*/
-  -webkit-column-gap: 1.5rem;
-          column-gap: 1.5rem;
-}
-
-@media (min-width: 641px) {
-  .blocks-gallery-grid {
-    height: 110.7rem;
-    -ms-grid-columns: (auto)[2];
-        grid-template-columns: repeat(2, auto);
-  }
-}
-
-@media (min-width: 769px) {
-  .blocks-gallery-grid {
-    -ms-grid-columns: (auto)[3];
+/*blockediterのgrid表示がうまくいかないためWPデフォルトとする
+/*.blocks-gallery-grid {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    /*grid-template-columns: repeat(1, auto);*/
+/*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    column-gap: 1.5rem;
+    /*@include breakpoint(tablet) {*/
+/*height: 110.7rem;*/
+/*grid-template-columns: repeat(2, auto);
+    }
+    @include breakpoint(pc) {
         grid-template-columns: repeat(3, auto);
-    height: 80.4rem;
-  }
-}
-
-.blocks-gallery-grid .blocks-gallery-item {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.blocks-gallery-grid img {
-  width: 100%;
-}
-
+        /*height: 80.4rem;
+    }*/
+/*    .blocks-gallery-item {
+        width: 100%;
+        object-fit: cover;
+        
+    }
+}*/
 ol {
   margin: 3rem 0 6rem 2rem;
 }
@@ -1424,24 +1410,31 @@ td {
   padding-top: 3.5rem auto 3.5rem auto;
   table-layout: auto;
   margin-bottom: 3rem;
+  height: 4rem;
+}
+
+td:nth-of-type(1) {
+  width: 30%;
+}
+
+td:nth-of-type(2) {
+  width: 70%;
 }
 
 .wp-block-button__link {
   text-align: center;
-  padding-top: 2.2rem;
+  /*padding-top: 2.2rem;*/
+  padding: 1.2rem 2.4rem;
   border: solid 0.1rem #707070;
   background-color: #f2ede9;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   width: 33.5rem;
-  height: 8.1rem;
+  /*height: 8.1rem;*/
   margin-bottom: 3rem;
   color: #3C2A10;
-}
-
-@media (min-width: 641px) {
-  .wp-block-button__link {
-    width: 42.9rem;
-  }
+  /*@include breakpoint(tablet) {
+        width: 42.9rem;
+    }*/
 }
 
 /*全画面右余白削除,sidebar高さをfooterまで埋める調整用*/
