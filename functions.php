@@ -36,6 +36,10 @@
     }
     add_action( 'admin_init', 'hamburger_theme_add_editor_styles' );
 
+    if ( ! isset( $content_width ) ) {
+        $content_width = 960;
+    }
+
     //自動挿入されるGutenberg用CSSを削除
     //add_action( 'wp_enqueue_scripts', 'remove_block_library_style' );
     //function remove_block_library_style() {

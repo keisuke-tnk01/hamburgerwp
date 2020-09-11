@@ -39,8 +39,52 @@ body {
 }
 
   //max-width 600px以下での上部WP管理バー位置ずれ修正用だが機能せず、wp-includeの中のadmin-bar.min.cssで以下のようにposition：absoluteからfixedに書き換え
-  @media screen and (max-width: 600px) {
-    #wpadminbar {
-        position: fixed!important;
-    }
-  }
+
+
+/*テーマチェックエラー解消用*/
+.wp-caption {
+    color: #666;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    font-style: italic;
+    margin-bottom: 1.5em;
+    max-width: 100%;
+}
+.wp-caption-text {
+    margin: 0.8075em 0;
+}
+.sticky {
+    position: relative;
+}
+.gallery-caption {
+    font-size: 13px;
+    font-size: 0.8125rem;
+}
+.bypostauthor {
+    border: 1px solid #333;
+    padding: 2px;
+}
+.alignleft {
+    display: block;
+    float: left;
+    margin-right: 1.5em;
+}
+.alignright {
+    display: block;
+    float: right;
+    margin-left: 1.5em;
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}

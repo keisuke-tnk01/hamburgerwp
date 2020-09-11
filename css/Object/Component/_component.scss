@@ -435,28 +435,26 @@ p.c-page__word__nex {
     }
 }
 
-/*blockediterのgrid表示がうまくいかないためWPデフォルトとする
-/*.blocks-gallery-grid {
+/*gridの2，3列表示の画像サイズを決めるのはこのコード*/
+.wp-block-gallery.columns-3 .blocks-gallery-item {
+    width: 100%;
+    object-fit: cover
+}
+
+.blocks-gallery-grid {
     width: 100%;
     margin-top: 1rem;
-    display: flex;
-    /*grid-template-columns: repeat(1, auto);*/
-    /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(1, auto);
     column-gap: 1.5rem;
-    /*@include breakpoint(tablet) {*/
-        /*height: 110.7rem;*/
-        /*grid-template-columns: repeat(2, auto);
+    @include breakpoint(tablet) {
+        grid-template-columns: repeat(2, auto);
     }
     @include breakpoint(pc) {
         grid-template-columns: repeat(3, auto);
-        /*height: 80.4rem;
-    }*/
-/*    .blocks-gallery-item {
-        width: 100%;
-        object-fit: cover;
-        
     }
-}*/
+
+}
 
 
 ol {

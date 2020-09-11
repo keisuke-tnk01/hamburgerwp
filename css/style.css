@@ -365,10 +365,60 @@ body {
   /*JSでsidebar開いたときに背景を固定させる*/
 }
 
-@media screen and (max-width: 600px) {
-  #wpadminbar {
-    position: fixed !important;
-  }
+/*テーマチェックエラー解消用*/
+.wp-caption {
+  color: #666;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-style: italic;
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+.wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+.sticky {
+  position: relative;
+}
+
+.gallery-caption {
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+.bypostauthor {
+  border: 1px solid #333;
+  padding: 2px;
+}
+
+.alignleft {
+  display: block;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: block;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 .l-header {
@@ -1376,28 +1426,38 @@ p.c-page__word__nex {
   }
 }
 
-/*blockediterのgrid表示がうまくいかないためWPデフォルトとする
-/*.blocks-gallery-grid {
-    width: 100%;
-    margin-top: 1rem;
-    display: flex;
-    /*grid-template-columns: repeat(1, auto);*/
-/*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    column-gap: 1.5rem;
-    /*@include breakpoint(tablet) {*/
-/*height: 110.7rem;*/
-/*grid-template-columns: repeat(2, auto);
-    }
-    @include breakpoint(pc) {
+/*gridの2，3列表示の画像サイズを決めるのはこのコード*/
+.wp-block-gallery.columns-3 .blocks-gallery-item {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blocks-gallery-grid {
+  width: 100%;
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[1];
+      grid-template-columns: repeat(1, auto);
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+
+@media (min-width: 641px) {
+  .blocks-gallery-grid {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (min-width: 769px) {
+  .blocks-gallery-grid {
+    -ms-grid-columns: (auto)[3];
         grid-template-columns: repeat(3, auto);
-        /*height: 80.4rem;
-    }*/
-/*    .blocks-gallery-item {
-        width: 100%;
-        object-fit: cover;
-        
-    }
-}*/
+  }
+}
+
 ol {
   margin: 3rem 0 6rem 2rem;
 }

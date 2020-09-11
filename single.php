@@ -16,13 +16,13 @@
                     <div class="p-single-page__topics">
                         <?php if(have_posts()):
                             while(have_posts()): the_post();
-                                the_content();
+                                the_content(); the_tags();
                             endwhile;
                         else :
                             ?><p>表示する商品がありません</p><?php
                         endif;
                         ?>
-                       
+                       <!--テーマチェックエラーによりループ内にthe_tags();を追加-->
                     </div>
                 </div>
             </div>
