@@ -26,6 +26,10 @@
                     </div>
                 </div>
             </div>
+
+            <div class="page-links">
+               <?php wp_link_pages(); // 記事内ページャー ?>
+            </div>
     
             <!--<div class="p-single-page__mainbg">
                 <div class="p-single-page__main">

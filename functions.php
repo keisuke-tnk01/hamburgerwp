@@ -2,6 +2,8 @@
     add_theme_support( 'menus' ); //WP管理画面の外観に”メニュー”が追加される
     add_theme_support( 'title-tag' ); //タイトルを出力
     add_theme_support( 'post-thumbnails' );//アイキャッチ画像を扱えるようにする
+    
+    
 
     function hamburger_title( $title ) {
         //投稿・固定ページにかかわらず、サイトのフロントページが表示されているかを判定。そしてメインブログページが表示されているかを判定
@@ -15,6 +17,8 @@
         return $title;
     }
     add_filter( 'pre_get_document_title', 'hamburger_title' );
+
+    
 
     function hamburger_script() {
         wp_enqueue_style('Roboto', '//fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap', array() );//以下3種のフォントの読み込み
