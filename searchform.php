@@ -1,6 +1,6 @@
 <form role="search" method="get" action="<?php echo esc_url( home_url('/') ); ?>" id="searchform" class="p-search__form">
-    <div>
+    <form>
         <input class="c-search__text" type="text"  name="s" id="s">
-        <input type="submit" class="c-search__submit" value="検索" id="searchsubmit">
-    </div>
+        <button type="submit" class="c-search__submit" id="searchsubmit">検索<button>
+    </form>
 </form>
