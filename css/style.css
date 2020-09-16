@@ -441,6 +441,7 @@ body {
 .l-main {
   overflow: hidden;
   opacity: 1;
+  min-height: 130rem;
 }
 
 @media (min-width: 769px) {

@@ -1,6 +1,7 @@
 .l-main {
     overflow: hidden;
     opacity: 1;
+    min-height: 130rem;
 
 
     @include breakpoint(pc) {

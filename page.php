@@ -8,7 +8,7 @@
             <div class="p-page-hero">
                 <h1 class="c-single__main__title"><?php the_title(); ?>:</h1>
             </div>
-            <?php if(have_posts()): post_class();//テーマチェックエラーで追加
+            <?php if(have_posts()): //post_class();テーマチェックエラーで追加も不要
                     while(have_posts()): the_post();
                         
                         the_content();

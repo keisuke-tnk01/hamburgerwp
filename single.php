@@ -14,7 +14,7 @@
             <div class="p-single-page__mainbg">
                 <div class="p-single-page__main">
                     <div class="p-single-page__topics">
-                        <?php if(have_posts()): post_class();//テーマチェックエラーで追加
+                        <?php if(have_posts()): //post_class();テーマチェックエラーで追加も不要
                             while(have_posts()): the_post();
                                 the_content(); the_tags();
                             endwhile;

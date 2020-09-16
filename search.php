@@ -18,7 +18,7 @@
                     <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                     </p>
                 </div>
-                <?php if(have_posts()): post_class();//テーマチェックエラーで追加
+                <?php if(have_posts()): //post_class();テーマチェックエラーで追加
                     while(have_posts()): the_post(); ?>
                         <section class="p-card__wrapper">
                             <?php get_template_part('include/card'); ?>
