@@ -2,7 +2,7 @@
 <html lang="<?php language_attributes(); ?>"><!--言語設定を自動的に出力-->
 
 <head>
-    <meta charser="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <link rel="stylesheet" href="css/style.css">
     
@@ -19,7 +19,8 @@
 
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?><!--テーマチェックエラー修正のため追加-->
     <div class="u-body__wrrapper">
         <!--全画面右余白削除,sidebar高さをfooterまで埋める調整用-->
         <header class="l-header">

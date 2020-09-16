@@ -2,7 +2,7 @@
     add_theme_support( 'menus' ); //WP管理画面の外観に”メニュー”が追加される
     add_theme_support( 'title-tag' ); //タイトルを出力
     add_theme_support( 'post-thumbnails' );//アイキャッチ画像を扱えるようにする
-    
+    add_theme_support( 'automatic-feed-links' );//投稿およびコメントのヘッドの自動フィードリンクが有効になります(テーマチェックエラー修正)
     
 
     function hamburger_title( $title ) {
@@ -43,6 +43,7 @@
     if ( ! isset( $content_width ) ) {
         $content_width = 960;
     }
+
 
     //自動挿入されるGutenberg用CSSを削除
     //add_action( 'wp_enqueue_scripts', 'remove_block_library_style' );

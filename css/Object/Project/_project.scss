@@ -84,17 +84,19 @@
             position: relative;
             text-decoration: none;
         }
-        &:link {
-            color:#fff;
-        }
-        &:visited {
-            color:#fff;
-        }
-        &:hover {
-            color:blue;
-        }
-        &:active {
-            color:blue;
+        a{
+            &:link {
+                color:#fff;
+            }
+            &:visited {
+                color:#fff;
+            }
+            &:hover {
+                color:blue;
+            }
+            &:active {
+                color:blue;
+            }
         }
         a::after {
             content: "";
@@ -136,6 +138,7 @@
         margin-left: 4rem;
         margin-right: 2rem;
     }
+   
 }
 
 .p-eatIn__container {

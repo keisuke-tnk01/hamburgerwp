@@ -579,19 +579,19 @@ body {
   text-decoration: none;
 }
 
-.p-main__container:link {
+.p-main__container a:link {
   color: #fff;
 }
 
-.p-main__container:visited {
+.p-main__container a:visited {
   color: #fff;
 }
 
-.p-main__container:hover {
+.p-main__container a:hover {
   color: blue;
 }
 
-.p-main__container:active {
+.p-main__container a:active {
   color: blue;
 }
 
@@ -1064,7 +1064,8 @@ body {
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Fontawesome;
+  background-image: url(./../images/search.png);
+  /*font-family: Fontawesome;*/
   font-style: normal;
   font-weight: normal;
   font-size: 2.4rem;
