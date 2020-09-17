@@ -1440,23 +1440,23 @@ p.c-page__word__nex {
   margin-top: 1rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[1];
-      grid-template-columns: repeat(1, auto);
   -webkit-column-gap: 1.5rem;
           column-gap: 1.5rem;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 @media (min-width: 641px) {
   .blocks-gallery-grid {
-    -ms-grid-columns: (auto)[2];
-        grid-template-columns: repeat(2, auto);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 769px) {
   .blocks-gallery-grid {
-    -ms-grid-columns: (auto)[3];
-        grid-template-columns: repeat(3, auto);
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
