@@ -8,8 +8,6 @@
                 <h3>小見出しが入ります</h3>
                 <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </div>
-                <label class="c-card__btn">
-                    <input type="submit" class="c-card__search__submit"  onclick="location.href='<?php the_permalink( $post ); ?>'" value="詳しく見る">
-                </label>
+                    <button type="submit" class="c-card__btn" onclick="location.href='<?php the_permalink( $post ); ?>'" >詳しく見る</button>
         </div>
 </div>
