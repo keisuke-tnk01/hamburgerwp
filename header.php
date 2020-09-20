@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/style.css">不要-->
     
     <!--WP上部の管理バー表示時のサイトデザインへの重なりをキャンセル-->
     <?php if( is_user_logged_in() ) : ?>

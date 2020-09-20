@@ -24,8 +24,7 @@
         wp_enqueue_style('Roboto', '//fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap', array() );//以下3種のフォントの読み込み
         wp_enqueue_style('M+PLUS+1p', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap', array() );
         wp_enqueue_style('M+PLUS+Rounded+1c', '//fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap', array() );
-        wp_enqueue_style('style', get_template_directory_uri(). './css/style.css', array(), '1.0.0'); //ver.は作成者の中で管理
-        wp_enqueue_style('style', get_template_directory_uri(). 'style.css', array(), '1.0.0'); //ver.は作成者の中で管理
+        wp_enqueue_style('style', get_template_directory_uri(). '/css/style.css', array(), '1.0.0'); //ver.は作成者の中で管理。本番環境でcss読み込まないためcss/style.css→/css/style.cssで表示が正常化
         wp_deregister_script('jquery');//WP本体のjqueryを登録解除
         wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', array(), '3.5.1');
         wp_enqueue_script('scriptjs', get_template_directory_uri(). '/script.js', array('jquery'), '1.0.0', true);

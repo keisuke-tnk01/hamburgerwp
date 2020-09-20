@@ -10,7 +10,7 @@
         <?php wp_footer(); ?><!--WPがページを表示する際に必要なコードを出力。プラグインなどを出力する JavaScript もこの関数で出力-->
         
         
-        <script src="script.js"></script>
+        <!--<script src="script.js"></script>-->
     
     </body>
 
