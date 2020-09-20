@@ -9,7 +9,7 @@ img {
 
 * {
     max-width: 100%;
-    margin: auto;//footerのショップ情報｜ヒストリー表示を中央揃えにするため削除しないと均等割りとなってしまったgがこれをやるとcardの表示が左寄せになってしまうのでnot除外指定する//
+    margin: auto;//footerのショップ情報｜ヒストリー表示を中央揃えにするため削除しないと均等割りとなってしまったがこれをやるとcardの表示が左寄せになってしまうのでnot除外指定する//
 }
 
 html,
@@ -24,15 +24,15 @@ body {
     position: fixed;/*JSでsidebar開いたときに背景を固定させる*/
 }
 
-// mixin
+// mixin　641→560　769→960に変更
 @mixin breakpoint($point) {
     @if $point == tablet {
-        @media (min-width: 641px) {
+        @media (min-width: 560px) {
             @content;
         }
     }
     @if $point == pc {
-        @media (min-width: 769px) {
+        @media (min-width: 960px) {
             @content;
         }
     }

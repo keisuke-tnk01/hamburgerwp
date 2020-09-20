@@ -43,12 +43,5 @@
     }
 
 
-    //自動挿入されるGutenberg用CSSを削除
-    //add_action( 'wp_enqueue_scripts', 'remove_block_library_style' );
-    //function remove_block_library_style() {
-	//wp_dequeue_style( 'wp-block-library' );
-	//wp_dequeue_style( 'wp-block-library-theme' );
-    //}
-
     //WP上部管理バーを非表示
     //add_filter( 'show_admin_bar', '__return_false' );
